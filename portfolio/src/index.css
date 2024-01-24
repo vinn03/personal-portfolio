@@ -4,6 +4,27 @@
 
 html {
     background-color: rgba(0, 13, 50, 0.95);
+    overflow-y: scroll;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-in {
+    opacity: 0;
+    animation: slideIn 2s ease-in-out 1s forwards;
 }
 
 .full-wh {
