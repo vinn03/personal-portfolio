@@ -22,9 +22,26 @@ html {
         opacity: 1;
     }
 }
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+}
+
 .slide-in {
     opacity: 0;
     animation: slideIn 2s ease-in-out 1s forwards;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    animation: bounce 2s infinite;
+    color: white; /* Color of the icon */
+    font-size: 2rem; /* Size of the icon */
 }
 
 .full-wh {

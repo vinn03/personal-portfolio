@@ -1,6 +1,7 @@
 import "../index.css"
 import image from "../assets/APC_0084.jpg";
-import {GitHub, LinkedIn} from "@mui/icons-material";
+import {GitHub, LinkedIn } from "@mui/icons-material";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function App() {
 
@@ -13,14 +14,22 @@ function App() {
         <div id="stars4"></div>
       </div>
 
-      <header className="font-mono text-blue-300 ml-5 mt-5 md:ml-48 md:mt-10" >
-        About &nbsp; Skills &nbsp; Projects
-        <a href="https://github.com/vinn03" target="_blank" rel="noreferrer" className="ml-5 text-blue-300 hover:text-blue-100">
-          <GitHub></GitHub>
-        </a>
-        <a href="https://www.linkedin.com/in/vincent-wz-liu" target="_blank" rel="noreferrer" className="ml-5 text-blue-300 hover:text-blue-100">
-          <LinkedIn></LinkedIn>
-        </a>
+      <header className="font-mono text-blue-300 ml-5 mt-5 md:ml-48 md:mt-10 flex justify-between w-5/12 items-center">
+        <span>
+            <a className="hover:text-blue-100 text-lg">About</a>
+            &nbsp;&nbsp;
+            <a className="hover:text-blue-100 text-lg">Skills</a>
+            &nbsp;&nbsp;
+            <a className="hover:text-blue-100 text-lg">Projects</a>
+        </span>
+        <span>
+          <a href="https://github.com/vinn03" target="_blank" rel="noreferrer" className="ml-5 hover:text-blue-100">
+            <GitHub fontSize="large"></GitHub>
+          </a>
+          <a href="https://www.linkedin.com/in/vincent-wz-liu" target="_blank" rel="noreferrer" className="ml-5 hover:text-blue-100">
+            <LinkedIn fontSize="large"></LinkedIn>
+          </a>
+        </span>
       </header>
 
       <div className="md:ml-28 flex flex-col md:flex-row">
@@ -50,7 +59,8 @@ function App() {
             In my spare time, I enjoy playing video games (especially role-playing games), playing the guitar, drumming, and diving into topics such as urbanism and world history. <br></br> <br></br>
           </p>
         </span>
-        <img className="slide-in size-full md:size-1/4 md:m-10 md:ml-44" src={image} alt="Vincent Liu" style={{ borderRadius: '20px' }} />
+        <img className="slide-in size-full mt-5 md:size-1/4 md:m-10 md:ml-44" src={image} alt="Vincent Liu" style={{ borderRadius: '20px' }} />
+        <ArrowDownwardIcon className="scroll-indicator" sx={{ color: '#dbeafe', fontSize: '3rem' }}/>
       </div>
     </>
   )
