@@ -53,8 +53,8 @@ function App() {
         <div id="stars4"></div>
       </div>
 
-      <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pt-5 flex md:pr-60 md:pb-5 justify-between items-center" 
-      style={{ backgroundColor: "rgba(0, 13, 50, 0.8)", position: 'fixed', top: 0, left: 0, right: 0 }}>
+      <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pt-5 flex md:pr-60 md:pb-5 justify-between items-center"
+      style={{ backgroundColor: "rgba(0, 13, 50, 0.8)", position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1 }}>
         <span>
             <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.2} className="hover:text-blue-100 text-lg">About</Link>
             &nbsp;&nbsp;
@@ -73,7 +73,7 @@ function App() {
       </header>
 
       <Element id="about" name="about" className="element">
-        <div className="md:ml-28 md:mt-28 flex flex-col md:flex-row">
+        <div className="mt-10 md:ml-28 md:mt-28 flex flex-col md:flex-row">
           <span className="md:w-1/2 md:mr-10" style={{ animation: "fadeIn 2s ease-in-out 0s forwards" }}>
             <h1 className="text-4xl md:text-8xl pt-8 pl-5 md:pl-20 pb-5 font-sans text-blue-100">Vincent Liu</h1>
 
@@ -103,7 +103,7 @@ function App() {
           <img className="slide-in size-full mt-5 md:size-1/4 md:m-10 md:ml-44" src={image} alt="Vincent Liu" style={{ borderRadius: '20px' }} />
           
           {isArrowVisible && 
-          <ArrowDownwardIcon className="scroll-indicator"
+          <ArrowDownwardIcon className="fixed bottom-10 right-1 animate-bounce text-blue-100 text-2xl"
             sx={{ color: '#dbeafe', fontSize: '3rem' }}
             onClick={() => {
               const nextSection = getNextSection();
