@@ -2,47 +2,11 @@ import "../index.css"
 import React from 'react'
 import image from "../assets/APC_0084.jpg";
 import {GitHub, LinkedIn } from "@mui/icons-material";
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Skills from "./skills";
 import Projects from "./projects";
-import { Link, Element, scroller } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 
 function App() {
-
-  const [isArrowVisible, setIsArrowVisible] = React.useState(true);
-  const [currentSection, setCurrentSection] = React.useState('about');
-
-  const checkScroll = () => {
-    const aboutElement = document.getElementById('about')!;
-    const skillsElement = document.getElementById('skills')!;
-  
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      setCurrentSection('projects');
-      setIsArrowVisible(false);
-    } else if (window.scrollY + window.innerHeight >= skillsElement.offsetTop) {
-      setCurrentSection('skills');
-      setIsArrowVisible(true);
-    } else if (window.scrollY + window.innerHeight >= aboutElement.offsetTop) {
-      setCurrentSection('about');
-      setIsArrowVisible(true);
-    }
-  };
-
-  const getNextSection = () => {
-    switch (currentSection) {
-      case 'about':
-        return 'skills';
-      case 'skills':
-        return 'projects';
-      default:
-        return 'about';
-    }
-  };
-
-  React.useEffect(() => {
-    window.addEventListener('scroll', checkScroll);
-    return () => window.removeEventListener('scroll', checkScroll);
-  }, []);
 
   return (
     <>
@@ -101,16 +65,6 @@ function App() {
             </p>
           </span>
           <img className="slide-in size-full mt-5 md:size-1/4 md:m-10 md:ml-44" src={image} alt="Vincent Liu" style={{ borderRadius: '20px' }} />
-          
-          {isArrowVisible && 
-          <ArrowDownwardIcon className="fixed bottom-10 right-1 animate-bounce text-blue-100 text-2xl"
-            sx={{ color: '#dbeafe', fontSize: '3rem' }}
-            onClick={() => {
-              const nextSection = getNextSection();
-              scroller.scrollTo(nextSection, { smooth: true, duration: 500, offset: -window.innerHeight * 0.2 });
-              setCurrentSection(nextSection);
-            }}
-          />}
 
         </div>
       </Element>
