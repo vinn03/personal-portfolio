@@ -5,7 +5,7 @@ import Skills from "./skills";
 import Projects from "./projects";
 import { Link, Element } from 'react-scroll';
 
-function App() : any {
+function App() : JSX.Element{
 
   return (
     <>
@@ -16,14 +16,14 @@ function App() : any {
         <div id="stars4"></div>
       </div>
 
-      <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pr-36 md:pt-5 md:pb-5 flex justify-between items-center"
+      <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{ backgroundColor: "rgba(0, 13, 50, 0.8)", position: 'fixed', top: 0, left: 0, right: 0, zIndex: 2 }}>
         <span>
-            <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg">About</Link>
+            <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">About</Link>
             &nbsp;&nbsp;
-            <Link to="skills" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg">Skills</Link>
+            <Link to="skills" smooth={true} duration={500} offset={-window.innerHeight * 0.2} className="hover:text-blue-100 text-lg md:text-xl">Skills</Link>
             &nbsp;&nbsp;
-            <Link to="projects" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg">Projects</Link>
+            <Link to="projects" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">Projects</Link>
         </span>
         <span>
           <a href="https://github.com/vinn03" target="_blank" rel="noreferrer" className="mr-1 md:ml-5 hover:text-blue-100">
@@ -60,7 +60,7 @@ function App() : any {
               Since then, I've attended numerous hackathons and worked towards a transfer into the combined honours program between computing science and geography. <br></br> <br></br>
               This goal was finally achieved in Summer 2023. <br></br> <br></br>
               Currently, I am honing my skills in full-stack development and spatial data analysis with the aim of securing a co-op position for the Summer 2024 term. <br></br> <br></br>
-              In my spare time, I enjoy playing video games (especially role-playing games), playing the guitar, drumming, and diving into topics such as urbanism and world history. <br></br> <br></br>
+              In my spare time, I enjoy playing video games (especially role-playing games), strumming the guitar, jamming on drums, 3D printing and modelling, and diving into topics such as urbanism and world history. <br></br> <br></br>
             </p>
           </span> 
           <img className="slide-in size-4/5 sm:mt-5 ml-10 md:size-1/4 md:m-10 md:ml-44" src={image} alt="Vincent Liu" style={{ borderRadius: '20px' }} />

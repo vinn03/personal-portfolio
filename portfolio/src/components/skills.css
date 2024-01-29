@@ -21,8 +21,10 @@
 }
 
 .swiper-scrollbar {
-    height: 10px;
-    background-color: #FFF;
-    border-radius: 10px;
-    bottom: -10px;
+    background-color: rgba(120, 156, 255, 0.281);
 }
+
+.swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: rgb(120, 155, 255);
+}
+

@@ -1,17 +1,68 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules'
+import nrt_main from '../assets/img_projects/nrt/nrt_main.jpg';
+import nrt_addlocation from '../assets/img_projects/nrt/nrt_addlocation.jpg';
+import nrt_example from '../assets/img_projects/nrt/nrt_example.jpg';
+import jgdev from '../assets/img_projects/jg/jgdev.png';
+import iupacdb from '../assets/img_projects/iupac/iupacdb.jpg';
+import iupacmain from '../assets/img_projects/iupac/iupacmain.jpg';
+import 'swiper/css/pagination';
+import 'swiper/css';
 
-
-const Projects : any = () => {
+const Projects: React.FC = () => {
     return (
         <div className="mt-40 mb-40 m-5 md:ml-28 md:mr-28 font-mono text-blue-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis eros eros. Praesent commodo a quam eget aliquam. Proin nisi quam, scelerisque non neque vitae, dictum posuere tortor. Vivamus venenatis sit amet diam eget placerat. Curabitur lacus arcu, pharetra placerat pulvinar non, mattis sit amet leo. Nam id fermentum odio. Morbi ut molestie eros, a fringilla ipsum. Quisque eget quam et quam ultricies vehicula non ultrices elit. Sed nunc felis, suscipit id lacus at, fringilla varius augue. Ut fermentum scelerisque tempor. Donec a mollis mi.
-            <br></br><br></br>
-            Curabitur ornare consectetur dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus non augue vel enim aliquet luctus nec rhoncus mi. Phasellus non justo lectus. In eu bibendum sem, non cursus dolor. Sed cursus accumsan eros commodo placerat. Suspendisse potenti. Nam porta dictum risus, ac pellentesque mi dictum nec. Nulla pretium vel lacus vel tempus. Donec pretium ut tortor ac vulputate. Cras diam dui, ultricies sed tortor nec, molestie imperdiet arcu. In venenatis, nisl et porttitor commodo, tellus velit vulputate nisi, quis aliquet quam ipsum eu ex. Vestibulum varius malesuada nisl, eu rutrum quam tempus volutpat. Suspendisse sagittis mi non nibh cursus convallis.
-            <br></br><br></br>
-            Vivamus aliquam, quam vitae facilisis tempus, elit felis blandit leo, non ullamcorper orci ligula eu orci. Praesent congue erat id tortor placerat faucibus. Fusce ut purus efficitur, volutpat nisi et, mollis metus. Proin luctus tincidunt finibus. Morbi ut est quis odio pharetra posuere non sit amet ex. Quisque luctus velit imperdiet enim vestibulum egestas. Nam non est mi. In felis mi, tincidunt feugiat nunc vitae, mattis feugiat lacus.
-            <br></br><br></br>
-            Vestibulum dignissim dapibus suscipit. Donec venenatis lacus id gravida pretium. Suspendisse ultrices, dui quis blandit pulvinar, tortor nibh auctor tortor, volutpat interdum leo enim a metus. Cras ornare dui et ligula lacinia varius. Integer volutpat eu nisl non tincidunt. Nulla condimentum eget nibh sit amet laoreet. Etiam ante nisl, volutpat at interdum id, eleifend non nulla. In blandit lectus consectetur metus pellentesque, at dignissim erat tempus. Suspendisse eget dolor a lorem ultricies ultrices. Integer vitae malesuada enim. Mauris tincidunt a arcu et tincidunt. Ut eu luctus nunc. Praesent diam enim, molestie a dolor imperdiet, vehicula sagittis dolor. Curabitur nec diam id velit volutpat rhoncus nec eu quam.
-            <br></br><br></br>
-            Mauris non nisi lectus. Nulla consectetur sagittis ligula non mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse erat nibh, placerat nec porttitor ullamcorper, euismod ut magna. In tempor molestie iaculis. Duis pretium, mauris sed mattis fermentum, nibh turpis bibendum nulla, et varius quam massa non felis. Donec in diam vitae justo tristique gravida. Praesent at consequat ex. Fusce semper eget lectus a aliquam.
+            <h2 className="text-2xl md:text-4xl pt-8 pb-6 md:pb-12 font-sans text-blue-100 text-center font-bold">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                    <h1 className="text-3xl font-bold text-blue-100 mb-6">Nuisance Report Tracker</h1>
+                    <Swiper
+                        modules={[Pagination]}
+                        pagination={{ clickable: true }}
+                    >
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={nrt_main} alt="demo" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={nrt_addlocation} alt="demo" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={nrt_example} alt="demo" />
+                        </SwiperSlide>
+                    </Swiper>
+                    <p className="text-blue-100 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.
+                    </p>
+                </div>
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                    <h1 className="text-3xl font-bold text-blue-100 mb-6">JapanGo</h1>
+                    <Swiper>
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={jgdev} alt="demo" />
+                        </SwiperSlide>
+                    </Swiper>
+                    <p className="text-blue-100 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.
+                    </p>
+                </div>
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                    <h1 className="text-3xl font-bold text-blue-100 mb-6">IUPAC Discord Quiz Bot</h1>
+                    <Swiper
+                        modules={[Pagination]}
+                        pagination={{ clickable: true }}
+                    >
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={iupacmain} alt="demo" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="rounded-3xl" src={iupacdb} alt="demo" />
+                        </SwiperSlide>
+                    </Swiper>
+                    <p className="text-blue-100 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
