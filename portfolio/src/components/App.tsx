@@ -24,6 +24,8 @@ function App() : JSX.Element{
             <Link to="skills" smooth={true} duration={500} offset={-window.innerHeight * 0.2} className="hover:text-blue-100 text-lg md:text-xl">Skills</Link>
             &nbsp;&nbsp;
             <Link to="projects" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">Projects</Link>
+            &nbsp;&nbsp;
+            <Link to="contact" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">Contact</Link>
         </span>
         <span>
           <a href="https://github.com/vinn03" target="_blank" rel="noreferrer" className="mr-1 md:ml-5 hover:text-blue-100">
@@ -44,6 +46,7 @@ function App() : JSX.Element{
 
             <ul className="pl-10 pr-10 md:pl-24 pt-10 font-sans list-disc text-blue-100">
               <li>Third-year Geographic Information Science Honours student at Simon Fraser University</li>
+              <li></li>
               <li>Currently learning full-stack development and spatial data analysis</li>
               <li>Seeking Summer 2024 Co-op</li>
             </ul>

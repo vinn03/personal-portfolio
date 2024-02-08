@@ -123,138 +123,116 @@ const Skills : React.FC = () => {
                         </div>
                     </div>
                 ) : (
-                <Swiper className="text-xs md:text-4xl font-sans text-blue-100"
+                <Swiper className="text-xs md:text-lg font-sans text-blue-100"
                     modules={[Scrollbar]}
                     scrollbar={{ draggable: true }}
-                    spaceBetween={40}
-                    slidesPerView={5}
-                    breakpoints={{
-                        768: {
-                            slidesPerView: 5,
-                            spaceBetween: 50,
-                        },
-                        800: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        1000: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                        },
-                        1400: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                        1645: {
-                            slidesPerView: 5,
-                            spaceBetween: 50,
-                        },
-                    }}
+                    spaceBetween={50}
+                    slidesPerView={window.innerWidth < 1134 ? 4 : 6}
                 >
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={reactimg} alt="React" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">React</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={angularimg} alt="Angular" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Angular</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={javascriptimg} alt="JavaScript" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">JavaScript</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={typescriptimg} alt="TypeScript" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">TypeScript</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={htmlimg} alt="HTML" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">HTML</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={cssimg} alt="CSS" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">CSS</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={tailwindsvg} alt="Tailwind" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Tailwind</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={cppimg} alt="C++" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">C++</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={pythonimg} alt="Python" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Python</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={sqlimg} alt="SQL" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">SQL</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={luaimg} alt="Lua" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Lua</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={nodeimg} alt="Node.js" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Node.js</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={expressimg} alt="Express" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Express</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={mongoimg} alt="MongoDB" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">MongoDB</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={firebaseimg} alt="Firebase" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Firebase</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={gitimg} alt="Git" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Git</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={qgisimg} alt="QGIS" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">QGIS</h3>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-blue-400 bg-opacity-20 md:w-72 md:h-72 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
+                        <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">
                             <img src={arcgisimg} alt="ArcGIS Pro" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">ArcGIS Pro</h3>
                         </div>
