@@ -127,7 +127,7 @@ const Skills : React.FC = () => {
                     modules={[Scrollbar]}
                     scrollbar={{ draggable: true }}
                     spaceBetween={50}
-                    slidesPerView={window.innerWidth < 1134 ? 4 : 6}
+                    slidesPerView={window.innerWidth < 1134 ? 4 : window.innerWidth < 1468 ? 6 : 8}
                 >
                     <SwiperSlide>
                         <div className="bg-blue-400 bg-opacity-20 md:w-40 md:h-40 w-20 h-20 p-5 rounded-3xl relative mb-8 flex flex-col justify-center items-center">

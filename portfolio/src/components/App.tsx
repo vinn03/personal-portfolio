@@ -1,11 +1,18 @@
+import { useState } from "react";
 import "../index.css"
 import image from "../assets/APC_0084.jpg";
-import {GitHub, LinkedIn } from "@mui/icons-material";
 import Skills from "./skills";
 import Projects from "./projects";
+import Contact from "./contact";
 import { Link, Element } from 'react-scroll';
 
-function App() : JSX.Element{
+function App() : JSX.Element {
+
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  const handleContactLinkClick = () => {
+    setIsContactOpen(true);
+  };
 
   return (
     <>
@@ -19,21 +26,28 @@ function App() : JSX.Element{
       <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{ backgroundColor: "rgba(0, 13, 50, 0.8)", position: 'fixed', top: 0, left: 0, right: 0, zIndex: 2 }}>
         <span>
-            <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">About</Link>
+            <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl cursor-pointer">About</Link>
             &nbsp;&nbsp;
-            <Link to="skills" smooth={true} duration={500} offset={-window.innerHeight * 0.2} className="hover:text-blue-100 text-lg md:text-xl">Skills</Link>
+            <Link to="skills" smooth={true} duration={500} offset={-window.innerHeight * 0.2} className="hover:text-blue-100 text-lg md:text-xl cursor-pointer">Skills</Link>
             &nbsp;&nbsp;
-            <Link to="projects" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">Projects</Link>
+            <Link to="projects" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl cursor-pointer">Projects</Link>
             &nbsp;&nbsp;
-            <Link to="contact" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl">Contact</Link>
-        </span>
-        <span>
-          <a href="https://github.com/vinn03" target="_blank" rel="noreferrer" className="mr-1 md:ml-5 hover:text-blue-100">
-            <GitHub fontSize="large"></GitHub>
-          </a>
-          <a href="https://www.linkedin.com/in/vincent-wz-liu" target="_blank" rel="noreferrer" className="mr-1 d:ml-5 hover:text-blue-100">
-            <LinkedIn fontSize="large"></LinkedIn>
-          </a>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-window.innerHeight * 0.1}
+              className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+              onClick={handleContactLinkClick}
+            >
+              Contact
+            </Link>
+            {isContactOpen && (
+              <Contact 
+                isOpen={true} 
+                onClose={() => setIsContactOpen(false)} 
+              />
+            )}
         </span>
       </header>
 
@@ -46,7 +60,6 @@ function App() : JSX.Element{
 
             <ul className="pl-10 pr-10 md:pl-24 pt-10 font-sans list-disc text-blue-100">
               <li>Third-year Geographic Information Science Honours student at Simon Fraser University</li>
-              <li></li>
               <li>Currently learning full-stack development and spatial data analysis</li>
               <li>Seeking Summer 2024 Co-op</li>
             </ul>

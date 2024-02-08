@@ -18,9 +18,9 @@ const Projects: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">Nuisance Report Tracker</h1>
-                    <span className="text-sm font-mono mb-8 text-blue-300">
-                        <h3 className="opacity-70">SFU - Client-side Development </h3>
-                        <a href="https://github.com/vinn03/nuisance-report-tracker" target="_blank" rel="noreferrer" className="hover:text-blue-100">
+                    <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
+                        <h3 className="opacity-70 inline">SFU - Client-side Development </h3>
+                        <a href="https://github.com/vinn03/nuisance-report-tracker" target="_blank" rel="noreferrer" className="hover:text-blue-100 inline">
                             <GitHub fontSize="small"></GitHub>
                         </a>
                     </span>
@@ -50,7 +50,17 @@ const Projects: React.FC = () => {
                 </div>
                 <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">JapanGo</h1>
-                    <h3 className="text-sm font-mono mb-8 text-blue-300 opacity-70">StormHacks 2023</h3>
+                    <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
+                        <h3 className="opacity-70 inline">StormHacks 2023</h3>
+                        <span>
+                            <a href="https://devpost.com/software/japango" target="_blank" rel="noreferrer" className="hover:text-blue-100 mr-2 inline">
+                                <LanguageIcon fontSize="small"></LanguageIcon>
+                            </a>
+                            <a href="https://github.com/vinn03/JapanGo" target="_blank" rel="noreferrer" className="hover:text-blue-100 inline">
+                                <GitHub fontSize="small"></GitHub>
+                            </a>
+                        </span>
+                    </span>
                     <Swiper>
                         <SwiperSlide>
                             <img className="rounded-3xl" src={jgdev} alt="demo" />
@@ -68,7 +78,17 @@ const Projects: React.FC = () => {
                 </div>
                 <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">IUPAC Discord Quiz Bot</h1>
-                    <h3 className="text-sm font-mono mb-8 text-blue-300 opacity-70">HackToSchool 2022</h3>
+                    <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
+                        <h3 className="opacity-70 inline">HackToSchool 2022</h3>
+                        <span>
+                            <a href="https://devpost.com/software/hack-to-school-project" target="_blank" rel="noreferrer" className="hover:text-blue-100 mr-2 inline">
+                                <LanguageIcon fontSize="small"></LanguageIcon>
+                            </a>
+                            <a href="https://github.com/im-calvin/HackToSchoolBot22" target="_blank" rel="noreferrer" className="hover:text-blue-100 inline">
+                                <GitHub fontSize="small"></GitHub>
+                            </a>
+                        </span>
+                    </span>
                     <Swiper
                         modules={[Pagination]}
                         pagination={{ clickable: true }}
