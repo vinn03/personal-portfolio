@@ -90,38 +90,38 @@ const Skills : React.FC = () => {
                         </div>
                         <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
                             <img src={luaimg} alt="Lua" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">Lua</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={nodeimg} alt="Node.js" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">Node.js</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={expressimg} alt="Express" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">Express</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={mongoimg} alt="MongoDB" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">MongoDB</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={firebaseimg} alt="Firebase" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">Firebase</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={gitimg} alt="Git" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">Git</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={qgisimg} alt="QGIS" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">QGIS</h3>
-                            </div>
-                            <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
-                                <img src={arcgisimg} alt="ArcGIS Pro" className="w-4/5 h-4/5 object-contain"/>
-                                <h3 className="mt-2 text-center font-mono">ArcGIS Pro</h3>
-                            </div>
+                            <h3 className="mt-2 text-center font-mono">Lua</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={nodeimg} alt="Node.js" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Node.js</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={expressimg} alt="Express" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Express</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={mongoimg} alt="MongoDB" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">MongoDB</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={firebaseimg} alt="Firebase" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Firebase</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={gitimg} alt="Git" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Git</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={qgisimg} alt="QGIS" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">QGIS</h3>
+                        </div>
+                        <div className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src={arcgisimg} alt="ArcGIS Pro" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">ArcGIS Pro</h3>
                         </div>
                     </div>
+                </div>
                 ) : (
                 <Swiper className="text-xs md:text-lg font-sans text-blue-100"
                     modules={[Scrollbar]}
