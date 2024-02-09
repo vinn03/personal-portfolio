@@ -146,9 +146,9 @@ const Projects: React.FC = () => {
                     </Swiper>
                     <div className="flex flex-col justify-between">
                         <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
-                            <li>Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds.</li>
+                            <li>Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds through a kahoot-style question delivery system..</li>
                             <br></br>
-                            <li>Questions are delivered through a Kahoot-style system, awarding points to users who answer the given questions correctly.</li>
+                            <li>Users are awarded points when the correct answer is sent into the chat, and can view their standing amongst their peers by displaying the leaderboard.</li>
                             <br></br>
                             <li>Incorporates a spaced repetition algorithm, contributing to a significant improvement in students' final grades.</li>
                             <br></br>
