@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
         <div className="mt-40 mb-40 m-5 md:ml-28 md:mr-28 font-mono text-blue-300">
             <h2 className="text-2xl md:text-4xl pt-8 pb-6 md:pb-12 font-sans text-blue-100 text-center font-bold">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">Nuisance Report Tracker</h1>
                     <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
                         <h3 className="opacity-70 inline">SFU - Client-side Development </h3>
@@ -38,39 +38,37 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={nrt_example} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-between">
-                        <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
-                            <li>Users can report nuisances on an interactive map; These reports are displayed on the map as markers.</li>
-                            <br></br>
-                            <li>The application enables users to add and store locations, which then can be used to geographically represent created reports.</li>
-                            <br></br>
-                            <li>Uses Angular as its framework, incorporating HTML, CSS, and Typescript for the construction of the application.</li>
-                            <br></br>
-                            <li>Employs a NoSQL database and utilizes RESTful API HTTP methods for managing the stored user reports and locations.</li>
-                        </ul>
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Angular
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                TypeScript
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                HTML
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                CSS
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Leaflet
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                HTTP
-                            </div>
+                    <div className="grid grid-cols-3 gap-4 mt-6">
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Angular
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            TypeScript
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            HTML
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            CSS
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Leaflet
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            HTTP
                         </div>
                     </div>
+                    <ul className="text-blue-100 mt-12 mb-12 list-disc list-inside">
+                        <li>Users can report nuisances on an interactive map; These reports are displayed on the map as markers.</li>
+                        <br></br>
+                        <li>The application enables users to add and store locations, which then can be used to geographically represent created reports.</li>
+                        <br></br>
+                        <li>Uses Angular as its framework, incorporating HTML, CSS, and Typescript for the construction of the application.</li>
+                        <br></br>
+                        <li>Employs a NoSQL database and utilizes RESTful API HTTP methods for managing the stored user reports and locations.</li>
+                    </ul>
                 </div>
-                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">JapanGo</h1>
                     <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
                         <h3 className="opacity-70 inline">StormHacks 2023</h3>
@@ -88,39 +86,37 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={jgdev} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-between">
-                        <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
-                            <li>A language-learning web application that pits players against each other in a Japanese vocabulary competition.</li>
-                            <br></br>
-                            <li>Players joins rooms to challenge one another in a one on one format; The first to guess correctly is awarded a point.</li>
-                            <br></br>
-                            <li>Employs HTML, CSS, JavaScript, Tailwind, and React for crafting the front-end of the application. </li>
-                            <br></br>
-                            <li>WebSockets were utilized to establish multi-session multiplayer capabilities, allowing users to participate in concurrent matches.</li>
-                        </ul>
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                React
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                JavaScript
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                HTML
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                CSS
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Tailwind
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                WebSockets
-                            </div>
+                    <div className="grid grid-cols-3 gap-4 mt-6">
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            React
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            JavaScript
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            HTML
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            CSS
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Tailwind
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            WebSockets
                         </div>
                     </div>
+                    <ul className="text-blue-100 mt-12 mb-12 list-disc list-inside">
+                        <li>A language-learning web application that pits players against each other in a Japanese vocabulary competition.</li>
+                        <br></br>
+                        <li>Players joins rooms to challenge one another in a one on one format; The first to guess correctly is awarded a point.</li>
+                        <br></br>
+                        <li>Employs HTML, CSS, JavaScript, Tailwind, and React for crafting the front-end of the application. </li>
+                        <br></br>
+                        <li>WebSockets were utilized to establish multi-session multiplayer capabilities, allowing users to participate in concurrent matches.</li>
+                    </ul>
                 </div>
-                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md">
+                <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
                     <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">IUPAC Discord Quiz Bot</h1>
                     <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
                         <h3 className="opacity-70 inline">HackToSchool 2022</h3>
@@ -144,32 +140,29 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={iupacdb} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-between">
-                        <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
-                            <li>Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds through a kahoot-style question delivery system..</li>
-                            <br></br>
-                            <li>Users are awarded points when the correct answer is sent into the chat, and can view their standing amongst their peers by displaying the leaderboard.</li>
-                            <br></br>
-                            <li>Incorporates a spaced repetition algorithm, contributing to a significant improvement in students' final grades.</li>
-                            <br></br>
-                            <li>Utilizes an API with Express.js and Node.js for the storage and retrieval of data in MongoDB.</li>
-                        </ul>
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Python
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Node.js
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                Express
-                            </div>
-                            <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
-                                MongoDB
-                            </div>
+                    <div className="grid grid-cols-3 gap-4 mt-6">
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Python
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Node.js
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            Express
+                        </div>
+                        <div className="rounded-lg text-center p-2 text-xs md:text-sm" style={{ backgroundColor: 'rgba(0, 13, 50, 0.8)' }}>
+                            MongoDB
                         </div>
                     </div>
-                    
+                    <ul className="text-blue-100 mt-12 mb-12 list-disc list-inside">
+                        <li>Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds through a kahoot-style question delivery system..</li>
+                        <br></br>
+                        <li>Users are awarded points when the correct answer is sent into the chat, and can view their standing amongst their peers by displaying the leaderboard.</li>
+                        <br></br>
+                        <li>Incorporates a spaced repetition algorithm, contributing to a significant improvement in students' final grades.</li>
+                        <br></br>
+                        <li>Utilizes an API with Express.js and Node.js for the storage and retrieval of data in MongoDB.</li>
+                    </ul>
                 </div>
             </div>
         </div>

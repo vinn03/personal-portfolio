@@ -6,6 +6,8 @@ import Skills from "./skills";
 import Projects from "./projects";
 import Contact from "./contact";
 import { Link, Element } from 'react-scroll';
+import AnimatedCursor from "react-animated-cursor"
+
 
 function App() : JSX.Element {
 
@@ -17,6 +19,21 @@ function App() : JSX.Element {
 
   return (
     <>
+    <AnimatedCursor
+      innerSize={8}
+      outerSize={60}
+      innerScale={1}
+      outerScale={1.7}
+      outerAlpha={1}
+      trailingSpeed={16}
+      innerStyle={{
+        backgroundColor: '#000000'
+      }}
+      outerStyle={{
+        backgroundColor: 'var(--cursor-color)',
+        mixBlendMode: 'exclusion'
+      }}
+    />      
       <div id="bg-animation" style={{ zIndex: -1 }}>
         <div id="stars"></div>
         <div id="stars2"></div>
