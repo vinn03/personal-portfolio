@@ -1,1 +1,1 @@
-Deployed at https://vinn03.dev
+https://vinn03.dev
