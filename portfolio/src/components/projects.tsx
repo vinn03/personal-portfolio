@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={nrt_example} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-evenly">
+                    <div className="flex flex-col justify-between">
                         <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
                             <li>Users can report nuisances on an interactive map; These reports are displayed on the map as markers.</li>
                             <br></br>
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={jgdev} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-evenly">
+                    <div className="flex flex-col justify-between">
                         <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
                             <li>A language-learning web application that pits players against each other in a Japanese vocabulary competition.</li>
                             <br></br>
@@ -144,7 +144,7 @@ const Projects: React.FC = () => {
                             <img className="rounded-3xl" src={iupacdb} alt="demo" />
                         </SwiperSlide>
                     </Swiper>
-                    <div className="flex flex-col justify-evenly">
+                    <div className="flex flex-col justify-between">
                         <ul className="text-blue-100 mt-4 mb-12 list-disc list-inside">
                             <li>Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds.</li>
                             <br></br>
