@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                             <a href="https://devpost.com/software/japango" target="_blank" rel="noreferrer" className="hover:text-blue-100 mr-2 inline">
                                 <LanguageIcon fontSize="small"></LanguageIcon>
                             </a>
-                            <a href="https://github.com/vinn03/JapanGo" target="_blank" rel="noreferrer" className="hover:text-blue-100 inline">
+                            <a href="https://github.com/bxian03/StormHacks2023" target="_blank" rel="noreferrer" className="hover:text-blue-100 inline">
                                 <GitHub fontSize="small"></GitHub>
                             </a>
                         </span>

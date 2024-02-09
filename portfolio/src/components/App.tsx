@@ -23,7 +23,7 @@ function App() : JSX.Element {
         <div id="stars4"></div>
       </div>
 
-      <header className="font-mono text-blue-300 pl-5 pt-5 md:pl-48 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
+      <header className="font-mono text-blue-300 pl-5 pt-4 pb-2 md:pl-48 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{ backgroundColor: "rgba(0, 13, 50, 0.8)", position: 'fixed', top: 0, left: 0, right: 0, zIndex: 2 }}>
         <span>
             <Link to="about" smooth={true} duration={500} offset={-window.innerHeight * 0.1} className="hover:text-blue-100 text-lg md:text-xl cursor-pointer">About</Link>
@@ -54,7 +54,8 @@ function App() : JSX.Element {
       <Element id="about" name="about" className="element">
         <div className="mt-10 md:ml-28 md:mt-20 flex flex-col md:flex-row">
           <span className="md:w-1/2 md:mr-10" style={{ animation: "fadeIn 2s ease-in-out 0s forwards" }}>
-            <h1 className="text-4xl md:text-8xl pt-16 pl-5 md:pt-8 md:pl-20 pb-5 font-sans text-blue-100">Vincent Liu</h1>
+
+            <h1 className="text-4xl md:text-8xl pt-16 pl-5 md:pt-8 md:pl-20 pb-5 font-sans font-bold text-blue-100">Vincent Liu</h1>
 
             <h3 className="pl-5 md:pl-20 text-xl md:text-2xl font-sans text-blue-100">Aspiring GIS & Software Developer</h3>
 
@@ -89,6 +90,13 @@ function App() : JSX.Element {
       <Element id="projects" name="projects">
         <Projects/>
       </Element>
+      <p className="text-sm text-blue-300 font-mono md:ml-28 mt-20 pb-5">This page was created in Visual Studio Code with{'\u00A0'}
+      <a className="text-blue-100 hover:underline" href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+        ReactTS
+      </a>
+      , <a className="text-blue-100 hover:underline" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind</a> +{'\u00A0'}
+      <a className="text-blue-100 hover:underline" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Vanilla CSS</a>, 
+      and <a className="text-blue-100 hover:underline" href="https://mui.com/" target="_blank" rel="noopener noreferrer">Material UI</a>.</p>
     </>
   )
 }
