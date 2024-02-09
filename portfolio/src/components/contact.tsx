@@ -1,19 +1,34 @@
-
 import CancelIcon from '@mui/icons-material/Cancel';
 import MailIcon from '@mui/icons-material/Mail';
 import { GitHub, LinkedIn } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import "./contact.css";
 
 const Contact = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
 
-    const closeModal = () => onClose();
+    useEffect(() => {
+        if (isOpen) {
+            setIsLoaded(false);
+            const timeoutId = setTimeout(() => setIsLoaded(true), 1);
+            return () => clearTimeout(timeoutId);
+        }
+    }, [isOpen]);
+
+    const closeModal = () => {
+        setIsLoaded(false);
+        onClose();
+    };
+
 
     return (
-        <div className="relative" style={{ zIndex: 2 }}>
+        
+        <div className={`relative ${isLoaded ? 'fade-in' : 'hidden'}`} style={{ zIndex: 2 }}>
             {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
                     <div className="bg-blue-950 p-8 rounded-3xl shadow-lg">
                         <span className="mb-6" style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <h2 className="text-2xl font-bold">Contact</h2>
+                            <h2 className="text-2xl ">Contact</h2>
                             <button 
                                 onClick={closeModal}
                                 style={{
@@ -22,7 +37,7 @@ const Contact = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) 
                                     marginRight: "-1rem"
                                 }}
                             >
-                            <CancelIcon/>
+                                <CancelIcon/>
                             </button>
                         </span>
                         <div>
