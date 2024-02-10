@@ -19,21 +19,17 @@ function App() : JSX.Element {
 
   return (
     <>
-    <AnimatedCursor
-      innerSize={8}
-      outerSize={60}
-      innerScale={1}
-      outerScale={1.7}
-      outerAlpha={1}
-      trailingSpeed={16}
-      innerStyle={{
-        backgroundColor: '#000000'
-      }}
-      outerStyle={{
-        backgroundColor: 'var(--cursor-color)',
-        mixBlendMode: 'exclusion'
-      }}
-    />      
+    {window.innerWidth > 768 && (
+      <AnimatedCursor
+        innerSize={8}
+        innerScale={4}
+        outerAlpha={0}
+        innerStyle={{
+          backgroundColor: 'var(--cursor-color)',
+          mixBlendMode: 'exclusion'
+        }}
+      />
+    )}
       <div id="bg-animation" style={{ zIndex: -1 }}>
         <div id="stars"></div>
         <div id="stars2"></div>
