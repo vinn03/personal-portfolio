@@ -87,6 +87,10 @@ const Skills : React.FC = () => {
                             <img src={luaimg} alt="Lua" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Lua</h3>
                         </a>
+                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer" className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-2xl relative flex flex-col justify-center items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="Matlab" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Matlab</h3>
+                        </a>
                         <a href="https://nodejs.org/" target="_blank" rel="noreferrer" className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-2xl relative flex flex-col justify-center items-center">
                             <img src={nodeimg} alt="Node.js" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Node.js</h3>
@@ -164,6 +168,10 @@ const Skills : React.FC = () => {
                         <a href="https://www.lua.org/" target="_blank" rel="noreferrer" className="bg-blue-400 bg-opacity-20 w-40 h-40 p-5 rounded-3xl relative flex flex-col justify-center items-center">
                             <img src={luaimg} alt="Lua" className="w-4/5 h-4/5 object-contain"/>
                             <h3 className="mt-2 text-center font-mono">Lua</h3>
+                        </a>
+                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer" className="bg-blue-400 bg-opacity-20 w-40 h-40 p-5 rounded-3xl relative flex flex-col justify-center items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="Matlab" className="w-4/5 h-4/5 object-contain"/>
+                            <h3 className="mt-2 text-center font-mono">Matlab</h3>
                         </a>
                         <a href="https://nodejs.org/" target="_blank" rel="noreferrer" className="bg-blue-400 bg-opacity-20 w-40 h-40 p-5 rounded-3xl relative flex flex-col justify-center items-center">
                             <img src={nodeimg} alt="Node.js" className="w-4/5 h-4/5 object-contain"/>
