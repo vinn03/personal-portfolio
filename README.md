@@ -1,1 +1,1 @@
-vinn03.dev
+[vinn03.dev]
