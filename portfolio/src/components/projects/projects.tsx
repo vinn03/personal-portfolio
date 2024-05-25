@@ -2,12 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { GitHub } from '@mui/icons-material';
 import LanguageIcon from '@mui/icons-material/Language';
-import nrt_main from '../assets/img_projects/nrt/nrt_main.jpg';
-import nrt_addlocation from '../assets/img_projects/nrt/nrt_addlocation.jpg';
-import nrt_example from '../assets/img_projects/nrt/nrt_example.jpg';
-import jgdev from '../assets/img_projects/jg/jgdev.png';
-import iupacdb from '../assets/img_projects/iupac/iupacdb.jpg';
-import iupacmain from '../assets/img_projects/iupac/iupacmain.jpg';
+import nrt_main from '../../assets/img_projects/nrt/nrt_main.jpg';
+import nrt_addlocation from '../../assets/img_projects/nrt/nrt_addlocation.jpg';
+import nrt_example from '../../assets/img_projects/nrt/nrt_example.jpg';
+import jgdev from '../../assets/img_projects/jg/jgdev.png';
+import iupacdb from '../../assets/img_projects/iupac/iupacdb.jpg';
+import iupacmain from '../../assets/img_projects/iupac/iupacmain.jpg';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
