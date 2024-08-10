@@ -1,32 +1,31 @@
-import "./index.css"
+import "./index.css";
 import Stars from "./components/stars-bg/stars";
 import Header from "./components/header/header";
 import Intro from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Footer from "./components/footer/footer";
-import { Element } from 'react-scroll';
+import { Element } from "react-scroll";
 
-function App() : JSX.Element {
-
+function App(): JSX.Element {
   return (
-    <>
-      <Stars/>
-      <Header/>
+    <div className="m-2">
+      <Stars />
+      <Header />
       {/* Sections of page */}
       <Element id="about" name="about" className="element">
-        <Intro/>
+        <Intro />
       </Element>
       <Element id="skills" name="skills">
-        <Skills/>
+        <Skills />
       </Element>
       <Element id="projects" name="projects">
-        <Projects/>
+        <Projects />
       </Element>
 
-      <Footer/>
-    </>
-  )
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

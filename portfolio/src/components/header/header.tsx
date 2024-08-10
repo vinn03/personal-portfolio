@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="font-mono text-blue-300 pl-5 pt-4 pb-2 md:pl-28 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
+      className="font-mono text-blue-300 pl-7 pt-4 pb-2 md:pl-28 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{
         backgroundColor: "rgba(0, 13, 50, 0.8)",
         position: "fixed",
