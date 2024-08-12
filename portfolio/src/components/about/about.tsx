@@ -11,20 +11,20 @@ function About() {
           Vincent Liu
         </h1>
 
-        <h3 className="text-xl md:text-2xl mt-6 ml-1 md:ml-5 font-sans text-blue-100">
+        <h3 className="text-xl md:text-2xl mt-6 font-sans text-blue-100">
           Aspiring GIS & Software Developer
         </h3>
 
         <ul className="pr-10 pt-10 ml-4 font-sans list-disc text-blue-100">
           <li>
-            Third-year Geographic Information Science Honours student at Simon
-            Fraser University
+            Third-year Geographic Information Science student at Simon Fraser
+            University
           </li>
           <li>Software Engineering Intern at Apple</li>
           <li>Seeking Spring & Summer 2025 internships</li>
         </ul>
 
-        <hr className="border-t-2 border-blue-100 mr-5 mt-10"></hr>
+        <hr className="border-t-2 border-blue-100 mt-10"></hr>
 
         <br></br>
         <br></br>
@@ -42,10 +42,10 @@ function About() {
           transfer into the combined honours program between computing science
           and geography. <br></br> <br></br>
           This goal was finally achieved in Summer 2023. <br></br> <br></br>
-          Currently, I am honing my skills in full-stack development and spatial
-          data analysis with the aim of securing a co-op position for the Summer
-          2024 term. <br></br> <br></br>
-          In my spare time, I enjoy playing video games (especially role-playing
+          Currently, I am honing my skills in{" "}
+          <strong>full-stack development</strong>, with interest in{" "}
+          <strong>web GIS</strong>. <br></br> <br></br>
+          In my down time, I enjoy playing video games (especially role-playing
           games), strumming the guitar, jamming on drums, 3D printing and
           modelling, and diving into topics such as urbanism and world history.{" "}
           <br></br> <br></br>
