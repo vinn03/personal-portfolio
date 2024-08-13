@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="font-mono text-blue-300 pl-7 pt-4 pb-2 md:pl-28 md:pr-56 md:pt-5 md:pb-5 flex justify-between items-center"
+      className="font-mono text-blue-300 pl-7 pt-4 pb-2 md:pl-32 md:pr-32 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{
         backgroundColor: "rgba(0, 13, 50, 0.8)",
         position: "fixed",
@@ -31,6 +31,16 @@ const Header: React.FC = () => {
           className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
         >
           About
+        </Link>
+        &nbsp;&nbsp;
+        <Link
+          to="experience"
+          smooth={true}
+          duration={500}
+          offset={-window.innerHeight * 0.1}
+          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+        >
+          Experience
         </Link>
         &nbsp;&nbsp;
         <Link
@@ -53,6 +63,8 @@ const Header: React.FC = () => {
           Projects
         </Link>
         &nbsp;&nbsp;
+      </span>
+      <span>
         <Link
           to="contact"
           smooth={true}

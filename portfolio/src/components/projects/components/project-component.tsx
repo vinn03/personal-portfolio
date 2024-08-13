@@ -26,7 +26,7 @@ const Skill: React.FC<SkillProps> = ({ tech }) => {
   );
 };
 
-const Project: React.FC<ProjectProps> = ({
+const ProjectComponent: React.FC<ProjectProps> = ({
   title,
   affiliation,
   webLink,
@@ -79,4 +79,4 @@ const Project: React.FC<ProjectProps> = ({
   );
 };
 
-export default Project;
+export default ProjectComponent;

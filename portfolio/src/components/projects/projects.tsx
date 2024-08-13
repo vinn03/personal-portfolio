@@ -1,4 +1,4 @@
-import Project from "./components/project";
+import ProjectComponent from "./components/project-component";
 
 const Projects: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Project
+        <ProjectComponent
           title="Nuisance Report Tracker"
           affiliation="SFU - Client-side Development"
           githubLink="https://github.com/vinn03/nuisance-report-tracker"
@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
             "Employs a NoSQL database and utilizes REST API methods for managing the stored user reports and locations.",
           ]}
         />
-        <Project
+        <ProjectComponent
           title="JapanGo"
           affiliation="StormHacks 2023"
           webLink="https://devpost.com/software/japango"
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
             "WebSockets were utilized to establish multi-session multiplayer capabilities, allowing users to participate in concurrent matches.",
           ]}
         />
-        <Project
+        <ProjectComponent
           title="IUPAC Discord Quiz Bot"
           affiliation="HackToSchool 2022"
           webLink="https://devpost.com/software/hack-to-school-project"

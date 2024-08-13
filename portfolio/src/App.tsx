@@ -2,6 +2,7 @@ import "./index.css";
 import Stars from "./components/stars-bg/stars";
 import Header from "./components/header/header";
 import Intro from "./components/about/about";
+import Experience from "./components/experience/experience";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Footer from "./components/footer/footer";
@@ -15,6 +16,9 @@ function App(): JSX.Element {
       {/* Sections of page */}
       <Element id="about" name="about" className="element">
         <Intro />
+      </Element>
+      <Element id="experience" name="experience">
+        <Experience />
       </Element>
       <Element id="skills" name="skills">
         <Skills />
