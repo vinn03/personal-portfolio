@@ -2,7 +2,7 @@ import ExpComponent from "./components/exp-component";
 
 const Experience = () => {
   return (
-    <div className="bg-opacity-20 p-4 rounded-lg shadow-md relative">
+    <div className="bg-opacity-20 p-4 md:mr-28 md:ml-28 rounded-lg shadow-md relative">
       <h2 className="text-2xl md:text-4xl pt-8 pb-6 md:pb-12 font-sans text-blue-100 text-center font-bold">
         Experience
       </h2>
