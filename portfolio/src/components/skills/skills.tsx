@@ -16,6 +16,7 @@ import qgisimg from "../../assets/img_skills/qgis.png";
 import arcgisimg from "../../assets/img_skills/arcgispro.png";
 import expressimg from "../../assets/img_skills/express.png";
 import tailwindsvg from "../../assets/img_skills/tailwind.svg";
+import deckimg from "../../assets/img_skills/deckgl.png";
 import "./skills.css";
 
 const Skills: React.FC = () => {
@@ -34,7 +35,7 @@ const Skills: React.FC = () => {
 
   return (
     <>
-      <h2 className="text-2xl md:text-4xl mt-24 font-sans text-blue-100 text-center font-bold">
+      <h2 className="text-2xl md:text-4xl mt-36 font-sans text-blue-100 text-center font-bold">
         Technical Skills
       </h2>
       <div
@@ -90,6 +91,12 @@ const Skills: React.FC = () => {
               name="Angular"
               href=""
               src={angularimg}
+              isMobile={isMobile}
+            />
+            <SmallSkill
+              name="deck.gl"
+              href="https://deck.gl/"
+              src={deckimg}
               isMobile={isMobile}
             />
             <SmallSkill

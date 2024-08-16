@@ -3,6 +3,7 @@ import React from "react";
 interface ExpProps {
   title: string;
   company: string;
+  location: string;
   duration: string;
   technologies: string[];
   description: string;
@@ -26,24 +27,25 @@ const Skill: React.FC<SkillProps> = ({ tech }) => {
 const ExpComponent: React.FC<ExpProps> = ({
   title,
   company,
+  location,
   duration,
   technologies,
   description,
 }) => {
   return (
-    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <span className="flex flex-row justify-between mb-2">
-        <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">
-          {title}
-        </h1>
-        <span className="grid grid-rows-1 grid-flow-col gap-4 text-blue-300 font-mono">
-          {technologies?.map((tech) => <Skill tech={tech} />)}
-        </span>
-      </span>
-      <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
-        <h3 className="opacity-70 inline">{company}</h3>
+    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative ">
+      <div className="text-xl font-bold font-mono text-blue-100 mb-2">
+        {title}
+      </div>
+      <span className="text-sm font-mono mb-4 text-blue-300 flex justify-between">
+        <h3 className="opacity-70 inline">
+          {company} - {location}
+        </h3>
         <h3 className="opacity-70 inline">{duration}</h3>
       </span>
+      <div className="grid grid-cols-3 gap-4 mb-6 text-blue-300 font-mono">
+        {technologies?.map((tech) => <Skill tech={tech} />)}
+      </div>
       <p className="text-blue-200 font-mono">{description}</p>
     </div>
   );

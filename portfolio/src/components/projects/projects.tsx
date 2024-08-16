@@ -2,7 +2,7 @@ import ProjectComponent from "./components/project-component";
 
 const Projects: React.FC = () => {
   return (
-    <div className="mt-40 mb-40 m-5 md:ml-28 md:mr-28 font-mono text-blue-300">
+    <div className="mt-36 mb-36 m-5 md:ml-28 md:mr-28 font-mono text-blue-300">
       <h2 className="text-2xl md:text-4xl pt-8 pb-6 md:pb-12 font-sans text-blue-100 text-center font-bold">
         Projects
       </h2>
