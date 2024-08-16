@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="font-mono text-blue-300 pl-7 pt-4 pb-2 md:pl-32 md:pr-32 md:pt-5 md:pb-5 flex justify-between items-center"
+      className="font-mono text-blue-300 text-sm md:text-xl pt-4 pb-2 pl-4 pr-4 md:pl-32 md:pr-32 md:pt-5 md:pb-5 flex justify-between items-center"
       style={{
         backgroundColor: "rgba(0, 13, 50, 0.8)",
         position: "fixed",
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
           smooth={true}
           duration={500}
           offset={-window.innerHeight * 0.1}
-          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+          className="hover:text-blue-100 cursor-pointer"
         >
           About
         </Link>
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           smooth={true}
           duration={500}
           offset={-window.innerHeight * 0.1}
-          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+          className="hover:text-blue-100 cursor-pointer"
         >
           Experience
         </Link>
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
           smooth={true}
           duration={500}
           offset={-window.innerHeight * 0.2}
-          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+          className="hover:text-blue-100 cursor-pointer"
         >
           Skills
         </Link>
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
           smooth={true}
           duration={500}
           offset={-window.innerHeight * 0.1}
-          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+          className="hover:text-blue-100 cursor-pointer"
         >
           Projects
         </Link>
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           smooth={true}
           duration={500}
           offset={-window.innerHeight * 0.1}
-          className="hover:text-blue-100 text-lg md:text-xl cursor-pointer"
+          className="hover:text-blue-100 cursor-pointer"
           onClick={handleContactLinkClick}
         >
           Contact

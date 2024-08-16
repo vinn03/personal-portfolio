@@ -33,7 +33,7 @@ const ExpComponent: React.FC<ExpProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative ">
+    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
       <div className="text-xl font-bold font-mono text-blue-100 mb-2">
         {title}
       </div>
