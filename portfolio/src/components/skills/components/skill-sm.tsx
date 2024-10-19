@@ -15,7 +15,7 @@ const SmallSkill: React.FC<SkillProps> = ({ name, href, src, isMobile }) => {
           href={href}
           target="_blank"
           rel="noreferrer"
-          className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-2xl flex flex-col justify-center items-center"
+          className="bg-blue-400 bg-opacity-20 w-24 h-24 p-4 rounded-2xl flex flex-col justify-center items-center"
         >
           <img src={src} alt={name} className="w-4/5 h-4/5 object-contain" />
           <div className="mt-2 text-center">{name}</div>
@@ -25,7 +25,7 @@ const SmallSkill: React.FC<SkillProps> = ({ name, href, src, isMobile }) => {
           href={href}
           target="_blank"
           rel="noreferrer"
-          className="bg-blue-400 bg-opacity-20 w-20 h-20 p-5 rounded-2xl flex flex-col justify-center items-center"
+          className="bg-blue-400 bg-opacity-20 w-24 h-24 p-4 rounded-2xl flex flex-col justify-center items-center"
         >
           <img src={src} alt={name} className="w-4/5 h-4/5 object-contain" />
           <div className="mt-2 text-center">{name}</div>

@@ -1,28 +1,37 @@
-import "./index.css";
+import React, { useState } from "react";
 import Stars from "./components/stars-bg/stars";
-import Header from "./components/header/header";
-import Intro from "./components/about/about";
+import Nav from "./components/nav/nav";
+import About from "./components/about/about";
+import Bio from "./components/bio/bio";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Footer from "./components/footer/footer";
-import { Element } from "react-scroll";
+import "./index.css";
 
 function App(): JSX.Element {
+  const [activeSection, setActiveSection] = useState<string | undefined>("bio");
+
+  const handleSectionChange = (event: React.MouseEvent) => {
+    const target = event.target as HTMLElement;
+    const section = target.textContent?.toLowerCase();
+    setActiveSection(section);
+  };
+
   return (
     <div className="m-2">
       <Stars />
-      <Header />
-      {/* Sections of page */}
-      <Element id="about" name="about" className="element">
-        <Intro />
-      </Element>
-      <Element id="skills" name="skills">
-        <Skills />
-      </Element>
-      <Element id="projects" name="projects">
-        <Projects />
-      </Element>
-
+      <div className="mt-28 flex flex-row justify-center">
+        <div className="w-1/3">
+          <About />
+          <Nav handleSectionChange={handleSectionChange} />
+        </div>
+        <div className="ml-24 w-1/3">
+          {activeSection === "about" ? <Bio /> : null}
+          {activeSection === "bio" ? <Bio /> : null}
+          {activeSection === "skills" ? <Skills /> : null}
+          {activeSection === "projects" ? <Projects /> : null}
+        </div>
+      </div>
       <Footer />
     </div>
   );
