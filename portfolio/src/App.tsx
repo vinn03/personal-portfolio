@@ -3,9 +3,9 @@ import Stars from "./components/stars-bg/stars";
 import Nav from "./components/nav/nav";
 import Intro from "./components/intro/intro";
 import Bio from "./components/bio/bio";
+import Socials from "./components/intro/socials";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
-import Skills from "./components/skills/skills";
 
 function App(): JSX.Element {
   const [activeSection, setActiveSection] = useState<string | undefined>("bio");
@@ -15,21 +15,21 @@ function App(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="m-4 lg:m-0">
       <Stars />
-      <div className="mt-28 flex flex-row items-start relative">
-        <div className="w-1/3 sticky flex-none top-10 z-10">
+      <div className="mt-28 lg:flex lg:flex-row lg:items-start relative">
+        <div className="lg:-ml-12 lg:w-2/5 lg:sticky lg:flex-none lg:top-28 lg:z-10">
           <Intro />
+          <Socials />
           <Nav
             handleSectionChange={handleSectionChange}
             activeSection={activeSection}
           />
         </div>
-        <div className="ml-24 w-1/3">
+        <div className="lg:ml-12 lg:w-2/5">
           {activeSection === "bio" ? <Bio /> : null}{" "}
           {activeSection === "experience" ? <Experience /> : null}
           {activeSection === "projects" ? <Projects /> : null}
-          {activeSection === "skills" ? <Skills /> : null}
         </div>
       </div>
     </div>

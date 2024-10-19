@@ -18,7 +18,7 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ tech }) => {
   return (
     <div
-      className="rounded-lg text-center p-2 text-xs md:text-sm"
+      className="rounded-lg text-center p-2 text-xs lg:text-base"
       style={{ backgroundColor: "rgba(0, 13, 50, 0.8)" }}
     >
       {tech}
@@ -36,11 +36,11 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">
+      <h1 className="text-xl lg:text-2xl font-bold font-mono text-blue-100 mb-2">
         {title}
       </h1>
-      <span className="text-sm font-mono mb-8 text-blue-300 flex justify-between">
-        <h3 className="opacity-70 inline">{affiliation}</h3>
+      <span className="text-sm lg:text-lg font-mono text-blue-300 flex justify-between">
+        <h3 className="inline">{affiliation}</h3>
         <span>
           {webLink ? (
             <a
@@ -49,7 +49,7 @@ const Project: React.FC<ProjectProps> = ({
               rel="noreferrer"
               className="hover:text-blue-100 mr-2 inline"
             >
-              <LanguageIcon fontSize="small"></LanguageIcon>
+              <LanguageIcon />
             </a>
           ) : null}
           {githubLink ? (
@@ -59,15 +59,15 @@ const Project: React.FC<ProjectProps> = ({
               rel="noreferrer"
               className="hover:text-blue-100 inline"
             >
-              <GitHub fontSize="small"></GitHub>
+              <GitHub />
             </a>
           ) : null}
         </span>
       </span>
-      <div className="grid grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 mt-6">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
-      <ul className="text-blue-100 mt-12 mb-12 list-disc list-inside">
+      <ul className="text-blue-200 lg:text-lg mt-8 list-none list-inside">
         {points?.map((point) => (
           <>
             <li>{point}</li>

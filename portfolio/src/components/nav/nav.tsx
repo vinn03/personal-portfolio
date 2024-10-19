@@ -1,18 +1,20 @@
 function Nav({ handleSectionChange, activeSection }) {
-  const sections = ["bio", "experience", "projects", "skills"];
+  const sections = ["bio", "experience", "projects"];
 
   return (
-    <div className="font-mono text-blue-300 mt-12 text-right">
+    <div
+      className="font-mono text-blue-300 lg:mt-12 lg:bg-inherit lg:relative lg:p-0 lg:flex-col lg:items-end
+              bg-[rgba(0,13,50,0.8)] flex flex-row justify-end p-2 fixed top-0 left-0 right-0 z-20"
+    >
       {sections.map((section) => (
-        <button
+        <a
           key={section}
-          className={`hover:underline w-full text-lg text-right md:text-xl cursor-pointer ${
-            activeSection === section ? "text-white" : ""
-          }`}
+          className={`lg:hover:underline text-lg lg:text-right lg:text-2xl mr-2 ml-2 lg:ml-0 lg:mr-0 cursor-pointer 
+                  ${activeSection === section ? "text-white" : ""}`}
           onClick={() => handleSectionChange(section)}
         >
           {section}
-        </button>
+        </a>
       ))}
     </div>
   );
