@@ -17,7 +17,7 @@ function App(): JSX.Element {
   return (
     <div className="m-4">
       <Stars />
-      <div className="mt-28 lg:flex lg:flex-row lg:justify-center relative">
+      <div className="mt-28 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
         <div className="lg:-ml-12 lg:w-1/5 lg:sticky lg:flex-none lg:top-28 lg:z-10">
           <Intro />
           <Socials />
