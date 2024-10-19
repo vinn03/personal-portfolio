@@ -4,7 +4,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 function Socials() {
   return (
-    <div className="font-mono mt-4 mb-24 lg:mb-0 text-blue-300 text-right">
+    <div className="font-mono mt-4 mb-24 lg:mb-0 text-blue-300 text-center lg:text-right">
       <a href="mailto:vinliu356@gmail.com">
         <span className="hover:brightness-200 mr-1">
           <MailIcon fontSize="large" />

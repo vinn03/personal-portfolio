@@ -1,6 +1,6 @@
 function Intro() {
   return (
-    <span className="text-right">
+    <span className="text-center lg:text-right">
       <h1 className="text-4xl lg:text-6xl font-sans font-bold text-blue-100">
         Vincent Liu
       </h1>
