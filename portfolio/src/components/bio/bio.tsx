@@ -1,6 +1,6 @@
 function Bio() {
   return (
-    <p className="font-mono text-base lg:text-lg text-blue-100">
+    <p className="font-mono text-base text-blue-100">
       Originally a Human Geography major, my interest in computing science and
       software development sparked after taking my first programming course in
       Summer 2022.

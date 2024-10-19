@@ -9,7 +9,7 @@ function Nav({ handleSectionChange, activeSection }) {
       {sections.map((section) => (
         <a
           key={section}
-          className={`lg:hover:underline text-lg lg:text-right lg:text-2xl mr-2 ml-2 lg:ml-0 lg:mr-0 cursor-pointer 
+          className={`lg:hover:underline text-lg lg:text-right lg:text-xl mr-2 ml-2 lg:ml-0 lg:mr-0 cursor-pointer 
                   ${activeSection === section ? "text-white" : ""}`}
           onClick={() => handleSectionChange(section)}
         >

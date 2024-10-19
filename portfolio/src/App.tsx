@@ -15,9 +15,9 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="m-4 lg:m-0">
+    <div className="m-4 lg:mr-24 lg:ml-24">
       <Stars />
-      <div className="mt-28 lg:flex lg:flex-row lg:items-start relative">
+      <div className="mt-28 lg:flex lg:flex-row lg:items-start lg:justify-center relative">
         <div className="lg:-ml-12 lg:w-2/5 lg:sticky lg:flex-none lg:top-28 lg:z-10">
           <Intro />
           <Socials />
@@ -26,8 +26,8 @@ function App(): JSX.Element {
             activeSection={activeSection}
           />
         </div>
-        <div className="lg:ml-12 lg:w-2/5">
-          {activeSection === "bio" ? <Bio /> : null}{" "}
+        <div className="lg:ml-12 lg:w-3/5">
+          {activeSection === "bio" ? <Bio /> : null}
           {activeSection === "experience" ? <Experience /> : null}
           {activeSection === "projects" ? <Projects /> : null}
         </div>
