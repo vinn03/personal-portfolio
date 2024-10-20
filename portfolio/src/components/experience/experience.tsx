@@ -17,7 +17,32 @@ function Experience() {
             "deck.gl",
             "CSS",
           ]}
-          description="Interned with the Apple Maps team. Developed, and deployed, an internal application that allows users to visualize large-scale datasets."
+          description={
+            <>
+              I integrated{" "}
+              <a
+                className="text-blue-100 hover:underline"
+                href="https://developer.apple.com/maps/web/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MapKit JS
+              </a>{" "}
+              and Apple-themeed visualization palettes into{" "}
+              <a
+                className="text-blue-100 hover:underline"
+                href="https://kepler.gl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kepler.gl
+              </a>
+              . <br></br>
+              <br></br>I also refactored the application using adapter, factory,
+              and object-oriented design patterns to improve scalability and
+              maintainability.
+            </>
+          }
         />
       </div>
       <div className="bg-opacity-20 rounded-lg shadow-md relative">

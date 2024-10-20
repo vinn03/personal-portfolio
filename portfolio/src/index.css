@@ -13,7 +13,7 @@ html {
 
 @supports (scrollbar-color: auto) {
   html {
-    scrollbar-color: rgb(96 165 250) rgba(0, 13, 50);
+    scrollbar-color: rgb(96 165 250) rgb(17, 27, 62);
   }
 }
 
@@ -27,7 +27,7 @@ html {
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(0, 13, 50);
+    background: rgb(17, 27, 62);
   }
 
   ::-webkit-scrollbar-thumb {

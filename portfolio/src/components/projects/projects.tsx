@@ -2,15 +2,50 @@ import Project from "./components/project";
 
 const PROJECTS_DATA = [
   {
+    title: "JobJug",
+    affiliation: "StormHacks 2024",
+    webLink: "https://devpost.com/software/jobjug",
+    githubLink: "https://github.com/im-calvin/job-jug",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "Python",
+      "Flask",
+      "OpenAI API",
+      "Gmail API",
+      "MongoDB",
+    ],
+    points: [
+      "An AI-powered job application tracker that automatically categorizes your job applications into their respective stages of the hiring process.",
+    ],
+  },
+  {
+    title: "Moments",
+    affiliation: "SFU - CMPT 372",
+    githubLink: "https://github.com/vinn03/Moments",
+    technologies: [
+      "React",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Leaflet",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    points: [
+      "A unique journaling platform that integrates interactive geospatial features, enabling users to reflect on their experiences by creating geographic 'memos.'",
+    ],
+  },
+  {
     title: "Nuisance Report Tracker",
-    affiliation: "SFU - Client-side Development",
+    affiliation: "SFU - CMPT 272",
     githubLink: "https://github.com/vinn03/nuisance-report-tracker",
     technologies: ["Angular", "TypeScript", "HTML", "CSS", "Leaflet", "HTTP"],
     points: [
-      "Users can report nuisances on an interactive map; These reports are displayed on the map as markers.",
-      "The application enables users to add and store locations, which then can be used to geographically represent created reports.",
-      "Built using Angular, incorporating HTML, CSS, and Typescript for the construction of the application.",
-      "Employs a NoSQL database and utilizes REST API methods for managing the stored user reports and locations.",
+      "A web application that allows users to report and track neighborhood nuisances, such as potholes and graffiti, on an interactive map.",
     ],
   },
   {
@@ -27,10 +62,7 @@ const PROJECTS_DATA = [
       "WebSockets",
     ],
     points: [
-      "A language-learning web application that pits players against each other in a Japanese vocabulary competition.",
-      "Players joins rooms to challenge one another in a one on one format; The first to guess correctly is awarded a point.",
-      "Employs HTML, CSS, JavaScript, Tailwind, and React for crafting the front-end of the application.",
-      "WebSockets were utilized to establish multi-session multiplayer capabilities, allowing users to participate in concurrent matches.",
+      "A language-learning web application that pits players against each other in a Japanese vocabulary competition using real-time WebSocket connections.",
     ],
   },
   {
@@ -40,10 +72,7 @@ const PROJECTS_DATA = [
     githubLink: "https://github.com/im-calvin/HackToSchoolBot22",
     technologies: ["Python", "Node.js", "Express", "MongoDB"],
     points: [
-      "Created using discord.py, the bot quizzes students on IUPAC names of organic chemical compounds through a kahoot-style question delivery system.",
-      "Users are awarded points when the correct answer is sent into the chat, and can view their standing amongst their peers by displaying the leaderboard.",
-      "Incorporates a spaced repetition algorithm, contributing to a significant improvement in students' final grades.",
-      "Utilizes an API with Express.js and Node.js for the storage and retrieval of data in MongoDB.",
+      "A Discord bot that helps students master IUPAC naming conventions for organic chemical compounds through interactive quizzes in a text channel.",
     ],
   },
 ];

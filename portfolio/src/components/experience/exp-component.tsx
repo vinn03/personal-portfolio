@@ -6,7 +6,7 @@ interface ExpProps {
   location: string;
   duration: string;
   technologies: string[];
-  description: string;
+  description: any;
 }
 
 interface SkillProps {
@@ -33,7 +33,7 @@ const ExpComponent: React.FC<ExpProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
+    <div className="bg-blue-400 bg-opacity-20 p-4 pb-8 rounded-lg shadow-md relative">
       <div className="text-xl lg:text-2xl font-bold font-mono text-blue-100 mb-2">
         {title}
       </div>

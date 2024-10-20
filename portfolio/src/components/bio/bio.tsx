@@ -7,11 +7,11 @@ function Bio() {
       <br></br> <br></br>
       The process of problem-solving and creating programs proved to be
       incredibly fulfilling, fuelling my desire to transfer into the School of
-      Computing Science and to further pursue such rewarding work.
+      Computing Science and to further pursue such rewarding efforts.
       <br></br> <br></br>
-      Since then, I've attended many hackathons and worked towards a transfer
-      into the joint program between computing science and geographic
-      information science. <br></br> <br></br>
+      Since then, I've attended many hackathons and have worked towards a
+      transfer into the joint major between computing science and geographic
+      information science at SFU. <br></br> <br></br>
       This goal was finally achieved in Summer 2023. <br></br> <br></br>
       Currently, I am honing my skills in{" "}
       <strong>full-stack development</strong>, with interest in{" "}

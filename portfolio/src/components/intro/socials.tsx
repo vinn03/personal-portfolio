@@ -24,7 +24,11 @@ function Socials() {
           <LinkedIn fontSize="large" />
         </span>
       </a>
-      <a href="/public/cv.pdf" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.vinn03.dev/cv/cv.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span className="hover:brightness-200">
           <TextSnippetIcon fontSize="large" />
         </span>
