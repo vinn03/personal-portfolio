@@ -7,8 +7,8 @@ function Intro() {
 
       <div className="text-xl font-mono mt-8 font-sans text-blue-100">
         <div className="mb-4">CS + GIS Undergrad @ SFU</div>
-        <div>Former SWE Intern @ Apple</div>
-        <div>Seeking Spring/Fall 2025</div>
+        <div>Returning Intern @ Apple</div>
+        <div>Seeking Spring/Fall 2025 Internships</div>
       </div>
     </span>
   );

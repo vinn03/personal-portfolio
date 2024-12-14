@@ -64,7 +64,7 @@ const Project: React.FC<ProjectProps> = ({
           ) : null}
         </span>
       </span>
-      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
       <ul className="text-blue-200 lg:text-lg mt-8 list-none list-inside">

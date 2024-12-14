@@ -5,6 +5,20 @@ function Experience() {
     <div className="grid grid-cols-1 gap-8 justify-start ">
       <div className="bg-opacity-20 rounded-lg shadow-md relative">
         <ExpComponent
+          title="Returning Apple Maps Intern"
+          company="Apple Inc."
+          location="Cupertino, CA"
+          duration="MAY 2025 - AUG 2025"
+          description={
+            <>
+              Returning to Apple Maps in summer 2025! <br></br> Position/details
+              to be updated.
+            </>
+          }
+        />
+      </div>
+      <div className="bg-opacity-20 rounded-lg shadow-md relative">
+        <ExpComponent
           title="Software Engineering Intern"
           company="Apple Inc."
           location="Cupertino, CA"
@@ -19,7 +33,8 @@ function Experience() {
           ]}
           description={
             <>
-              I integrated{" "}
+              Interned at Apple Maps in summer 2024. <br></br>
+              <br></br>Integrated{" "}
               <a
                 className="text-blue-100 hover:underline"
                 href="https://developer.apple.com/maps/web/"
@@ -28,7 +43,7 @@ function Experience() {
               >
                 MapKit JS
               </a>{" "}
-              and Apple-themeed visualization palettes into{" "}
+              and Apple-themed visualization palettes into{" "}
               <a
                 className="text-blue-100 hover:underline"
                 href="https://kepler.gl"
@@ -38,7 +53,7 @@ function Experience() {
                 Kepler.gl
               </a>
               . <br></br>
-              <br></br>I also refactored the application using adapter, factory,
+              <br></br>Also refactored the application using adapter, factory,
               and object-oriented design patterns to improve scalability and
               maintainability.
             </>

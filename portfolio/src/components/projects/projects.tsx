@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ReactTS
+            React
           </a>
           ,{" "}
           <a

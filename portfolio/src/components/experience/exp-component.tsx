@@ -5,7 +5,7 @@ interface ExpProps {
   company: string;
   location: string;
   duration: string;
-  technologies: string[];
+  technologies?: string[] | null;
   description: any;
 }
 
@@ -43,7 +43,7 @@ const ExpComponent: React.FC<ExpProps> = ({
         </h3>
         <h3 className="inline">{duration}</h3>
       </span>
-      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-6 text-blue-300 font-mono">
+      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 text-blue-300 font-mono">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
       <p className="text-blue-200 lg:text-lg font-mono mt-8">{description}</p>
