@@ -36,7 +36,7 @@ const PROJECTS_DATA = [
       "MongoDB",
     ],
     points: [
-      "A unique journaling platform that integrates interactive geospatial features, enabling users to reflect on their experiences by creating geographic 'memos.'",
+      "A unique journaling platform that integrates interactive geospatial features, enabling users to reflect on their experiences by creating geographic 'memos'.",
     ],
   },
   {
