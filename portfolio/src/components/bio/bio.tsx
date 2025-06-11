@@ -16,11 +16,11 @@ function Bio() {
       Currently, I am honing my skills in{" "}
       <strong>full-stack development</strong>, with interest in{" "}
       <strong>web GIS</strong>. I have also been refining my skills in
-      <strong> data science</strong> and <strong>data modeling</strong>.
+      <strong> data analytics</strong> and <strong>data science</strong>.
       <br></br> <br></br>
       In my down time, I enjoy playing video games (especially role-playing
-      games), strumming the guitar, jamming on drums, and diving into topics
-      such as urbanism and world history. <br></br> <br></br>
+      games), jamming on the guitar + bass + drums, and diving into topics such
+      as urbanism, anthropology, and history. <br></br> <br></br>
     </p>
   );
 }

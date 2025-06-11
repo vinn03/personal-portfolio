@@ -2,6 +2,40 @@ import Project from "./components/project";
 
 const PROJECTS_DATA = [
   {
+    title: "MetroWage",
+    affiliation: "ECCE - GIS App Challenge 2025",
+    githubLink: "https://github.com/benschoening/AppChallenge2025",
+    technologies: ["TypeScript", "Python", "React", "Redux", "NumPy", "Pandas"],
+    points: [
+      "A web application that calculates personalized living wages across Metro Vancouver municipalities, helping families and individuals understand the true cost of living in different regions through interactive geospatial visualizations.",
+    ],
+  },
+  {
+    title: "MoodMirror",
+    affiliation: "nwHacks 2025",
+    githubLink: "https://github.com/vinn03/moodmirror",
+    technologies: ["Swift", "Python", "Flask", "OpenCV", "TensorFlow", "Agora"],
+    points: [
+      "An application that analyzes facial expressions to detect and mirror user emotions using computer vision and machine learning techniques.",
+    ],
+  },
+  {
+    title: "Crash-stradamus",
+    affiliation: "SFU - CMPT 353",
+    technologies: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "SciPy",
+      "Sk-learn",
+      "Rasterio",
+    ],
+    points: [
+      "A machine learning project that predicts traffic accident severity using data analysis and predictive modeling techniques.",
+    ],
+  },
+  {
     title: "JobJug",
     affiliation: "StormHacks 2024",
     webLink: "https://devpost.com/software/jobjug",
