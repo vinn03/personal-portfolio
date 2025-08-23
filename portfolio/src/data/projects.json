@@ -1,0 +1,124 @@
+[
+  {
+    "title": "MetroWage",
+    "affiliation": "ECCE - GIS App Challenge 2025",
+    "githubLink": "https://github.com/benschoening/AppChallenge2025",
+    "technologies": [
+      "TypeScript",
+      "Python",
+      "React",
+      "Redux",
+      "NumPy",
+      "Pandas"
+    ],
+    "points": [
+      "A web application that calculates personalized living wages across Metro Vancouver municipalities, helping families and individuals understand the true cost of living in different regions through interactive geospatial visualizations."
+    ]
+  },
+  {
+    "title": "MoodMirror",
+    "affiliation": "nwHacks 2025",
+    "githubLink": "https://github.com/vinn03/moodmirror",
+    "technologies": [
+      "Swift",
+      "Python",
+      "Flask",
+      "OpenCV",
+      "TensorFlow",
+      "Agora"
+    ],
+    "points": [
+      "An application that analyzes facial expressions to detect and mirror user emotions using computer vision and machine learning techniques."
+    ]
+  },
+  {
+    "title": "Crash-stradamus",
+    "affiliation": "SFU - CMPT 353",
+    "technologies": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "SciPy",
+      "Sk-learn",
+      "Rasterio"
+    ],
+    "points": [
+      "A machine learning project that predicts traffic accident severity using data analysis and predictive modeling techniques."
+    ]
+  },
+  {
+    "title": "JobJug",
+    "affiliation": "StormHacks 2024",
+    "webLink": "https://devpost.com/software/jobjug",
+    "githubLink": "https://github.com/im-calvin/job-jug",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Tailwind",
+      "Python",
+      "Flask",
+      "OpenAI API",
+      "Gmail API",
+      "MongoDB"
+    ],
+    "points": [
+      "An AI-powered job application tracker that automatically categorizes your job applications into their respective stages of the hiring process."
+    ]
+  },
+  {
+    "title": "Moments",
+    "affiliation": "SFU - CMPT 372",
+    "githubLink": "https://github.com/vinn03/Moments",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Leaflet",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "points": [
+      "A unique journaling platform that integrates interactive geospatial features, enabling users to reflect on their experiences by creating geographic 'memos'."
+    ]
+  },
+  {
+    "title": "Nuisance Report Tracker",
+    "affiliation": "SFU - CMPT 272",
+    "githubLink": "https://github.com/vinn03/nuisance-report-tracker",
+    "technologies": ["Angular", "TypeScript", "HTML", "CSS", "Leaflet", "HTTP"],
+    "points": [
+      "A web application that allows users to report and track neighborhood nuisances, such as potholes and graffiti, on an interactive map."
+    ]
+  },
+  {
+    "title": "JapanGo",
+    "affiliation": "StormHacks 2023",
+    "webLink": "https://devpost.com/software/japango",
+    "githubLink": "https://github.com/bxian03/StormHacks2023",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "WebSockets"
+    ],
+    "points": [
+      "A language-learning web application that pits players against each other in a Japanese vocabulary competition using real-time WebSocket connections."
+    ]
+  },
+  {
+    "title": "IUPAC Discord Quiz Bot",
+    "affiliation": "HackToSchool 2022",
+    "webLink": "https://devpost.com/software/hack-to-school-project",
+    "githubLink": "https://github.com/im-calvin/HackToSchoolBot22",
+    "technologies": ["Python", "Node.js", "Express", "MongoDB"],
+    "points": [
+      "A Discord bot that helps students master IUPAC naming conventions for organic chemical compounds through interactive quizzes in a text channel."
+    ]
+  }
+]

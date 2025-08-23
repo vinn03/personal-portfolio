@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Software Engineering Intern",
+    "company": "Apple Inc.",
+    "location": "Cupertino, CA",
+    "duration": "MAY 2025 - AUG 2025",
+    "description": "I had the privilege of returning to Apple Maps as a summer 2025 intern!\n\n I merged the latest open-source updates to our internal kepler.gl fork, and refactored kepler.gl into a plugin for an internal data visualization platform.",
+    "technologies": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "MapKit JS",
+      "deck.gl",
+      "CSS"
+    ],
+    "links": [
+      {
+        "text": "MapKit JS",
+        "url": "https://developer.apple.com/maps/web/"
+      }
+    ]
+  },
+  {
+    "title": "Software Engineering Intern",
+    "company": "Apple Inc.",
+    "location": "Cupertino, CA",
+    "duration": "MAY 2024 - AUG 2024",
+    "technologies": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "MapKit JS",
+      "deck.gl",
+      "CSS"
+    ],
+    "description": "I got to intern with Apple Maps during the summer of 2024!\n\nI worked on the integration of MapKit JS and Apple-themed visualization palettes into Kepler.gl.\n\nI worked on refactoring Kepler.gl using the adapter design pattern to improve the scalability and maintainability of the app.",
+    "links": [
+      {
+        "text": "MapKit JS",
+        "url": "https://developer.apple.com/maps/web/"
+      },
+      {
+        "text": "Kepler.gl",
+        "url": "https://kepler.gl"
+      }
+    ]
+  },
+  {
+    "title": "Coding Instructor",
+    "company": "Roboplanet",
+    "location": "Richmond, BC",
+    "duration": "SEP 2022 - MAR 2023",
+    "technologies": ["Python", "JavaScript", "Scratch"],
+    "description": "I taught students, aged 6-12, the basics of programming in Python, JavaScript, and Scratch.\n\nI also developed and delivered the lesson plans, and provided guidance to students on their assignments and projects."
+  }
+]
