@@ -46,7 +46,7 @@ const ExpComponent: React.FC<ExpProps> = ({
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 text-blue-300 font-mono">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
-      <p className="text-blue-200 lg:text-lg font-mono mt-8">{description}</p>
+      <p className="text-blue-200 lg:text-lg font-mono mt-8" style={{ whiteSpace: 'pre-line' }}>{description}</p>
     </div>
   );
 };

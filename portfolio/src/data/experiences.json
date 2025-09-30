@@ -1,5 +1,13 @@
 [
   {
+    "title": "Data Science Intern",
+    "company": "GeoComply",
+    "location": "Vancouver, BC",
+    "duration": "SEP 2025 - PRESENT",
+    "description": "Fighting fraud to make iGaming safer :)\n (more details soon!)",
+    "technologies": ["Python", "PySpark", "SQL"]
+  },
+  {
     "title": "Software Engineering Intern",
     "company": "Apple Inc.",
     "location": "Cupertino, CA",
