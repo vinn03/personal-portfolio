@@ -1,11 +1,11 @@
 [
   {
-    "title": "Data Science Intern",
+    "title": "Software Engineer Intern / Data Science Intern",
     "company": "GeoComply",
     "location": "Vancouver, BC",
     "duration": "SEP 2025 - PRESENT",
-    "description": "Fighting fraud to make iGaming safer :)\n (more details soon!)",
-    "technologies": ["Python", "PySpark", "SQL"]
+    "description": "Designed and implemented a modular machine learning model pipeline to detect fraudulent activity within geographic areas, delivering its results to customers via gRPC.",
+    "technologies": ["Python", "PySpark", "SQL", "gRPC"]
   },
   {
     "title": "Software Engineering Intern",
