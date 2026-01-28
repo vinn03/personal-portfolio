@@ -1,5 +1,5 @@
 function Nav({ handleSectionChange, activeSection }) {
-  const sections = ["bio", "experience", "projects"];
+  const sections = ["experience", "projects", "bio"];
 
   return (
     <div

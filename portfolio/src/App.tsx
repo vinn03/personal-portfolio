@@ -8,7 +8,7 @@ import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 
 function App(): JSX.Element {
-  const [activeSection, setActiveSection] = useState<string | undefined>("bio");
+  const [activeSection, setActiveSection] = useState<string | undefined>("experience");
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
