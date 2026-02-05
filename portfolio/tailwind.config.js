@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'mono': ['Roboto Mono', 'monospace'],
         'sans': ['Open Sans', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       colors: {
         'dark-purple': '#800080',

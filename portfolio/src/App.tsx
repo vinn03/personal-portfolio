@@ -4,7 +4,7 @@ import Nav from "./components/nav/nav";
 import Intro from "./components/intro/intro";
 import Bio from "./components/bio/bio";
 import Socials from "./components/intro/socials";
-import Experience from "./components/experience/experience";
+import Experience from "./components/experience/experiences";
 import Projects from "./components/projects/projects";
 
 function App(): JSX.Element {

@@ -1,4 +1,4 @@
-import Project from "./components/project";
+import Project from "./project-component";
 import PROJECTS_DATA from "../../data/projects.json";
 
 const Projects: React.FC = () => {
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
         </div>
       ))}
 
-      <footer className="mb-4">
+      <footer>
         <p className="text-sm text-blue-300 font-mono mt-20">
           This{" "}
           <a
