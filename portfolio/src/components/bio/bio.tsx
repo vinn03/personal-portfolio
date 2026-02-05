@@ -1,6 +1,6 @@
 function Bio() {
   return (
-    <p className="font-inter text-base text-blue-100">
+    <p className="font-inter text-lg text-blue-100">
       I'm currently studying both computing science and geographic information
       science (GIS) at Simon Fraser University (SFU).
       <br></br> <br></br>
