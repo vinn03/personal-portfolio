@@ -2,6 +2,7 @@
   {
     "title": "Software Engineer Intern / Data Science Intern",
     "company": "GeoComply",
+    "companyUrl": "https://www.geocomply.com/anti-fraud-and-geolocation-solutions/geocomply-core/",
     "location": "Vancouver, BC",
     "duration": "SEP 2025 - PRESENT",
     "description": "Designed and implemented a modular machine learning model pipeline to detect fraudulent activity within geographic areas, delivering its results to customers via gRPC.",
@@ -10,6 +11,7 @@
   {
     "title": "Software Engineering Intern",
     "company": "Apple Inc.",
+    "companyUrl": "https://www.apple.com/maps",
     "location": "Cupertino, CA",
     "duration": "MAY 2025 - AUG 2025",
     "description": "I had the privilege of returning to Apple Maps as a summer 2025 intern!\n\n I merged the latest open-source updates to our internal kepler.gl fork, and refactored kepler.gl into a plugin for an internal data visualization platform.",
@@ -31,6 +33,7 @@
   {
     "title": "Software Engineering Intern",
     "company": "Apple Inc.",
+    "companyUrl": "https://www.apple.com/maps",
     "location": "Cupertino, CA",
     "duration": "MAY 2024 - AUG 2024",
     "technologies": [
@@ -52,13 +55,5 @@
         "url": "https://kepler.gl"
       }
     ]
-  },
-  {
-    "title": "Coding Instructor",
-    "company": "Roboplanet",
-    "location": "Richmond, BC",
-    "duration": "SEP 2022 - MAR 2023",
-    "technologies": ["Python", "JavaScript", "Scratch"],
-    "description": "I taught students, aged 6-12, the basics of programming in Python, JavaScript, and Scratch.\n\nI also developed and delivered the lesson plans, and provided guidance to students on their assignments and projects."
   }
 ]

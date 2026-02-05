@@ -12,7 +12,7 @@ function Experience() {
           <ExpComponent
             title={exp.title}
             company={exp.company}
-            location={exp.location}
+            companyUrl={exp.companyUrl}
             duration={exp.duration}
             technologies={exp.technologies}
             description={exp.description}

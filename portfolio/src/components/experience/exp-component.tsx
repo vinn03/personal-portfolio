@@ -1,9 +1,10 @@
 import React from "react";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 interface ExpProps {
   title: string;
   company: string;
-  location: string;
+  companyUrl?: string;
   duration: string;
   technologies?: string[] | null;
   description: any;
@@ -27,26 +28,41 @@ const Skill: React.FC<SkillProps> = ({ tech }) => {
 const ExpComponent: React.FC<ExpProps> = ({
   title,
   company,
-  location,
+  companyUrl,
   duration,
   technologies,
   description,
 }) => {
   return (
     <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <div className="text-xl lg:text-2xl font-bold font-mono text-blue-100 mb-2">
+      <div className="text-xl font-bold font-mono text-blue-100 mb-2">
         {title}
       </div>
       <span className="text-sm lg:text-lg font-mono mb-4 text-blue-300 flex justify-between">
-        <h3 className="inline">
-          {company} - {location}
-        </h3>
+        {companyUrl ? (
+          <a
+            href={companyUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center hover:text-blue-100"
+          >
+            {company}
+            <OpenInNewIcon style={{ fontSize: "inherit" }} className="ml-2" />
+          </a>
+        ) : (
+          <h3 className="inline">{company}</h3>
+        )}
         <h3 className="inline">{duration}</h3>
       </span>
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 text-blue-300 font-mono">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
-      <p className="text-blue-200 lg:text-lg font-inter mt-8" style={{ whiteSpace: 'pre-line' }}>{description}</p>
+      <p
+        className="text-blue-200 lg:text-lg font-inter mt-8"
+        style={{ whiteSpace: "pre-line" }}
+      >
+        {description}
+      </p>
     </div>
   );
 };

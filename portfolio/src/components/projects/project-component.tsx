@@ -36,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <h1 className="text-xl lg:text-2xl font-bold font-mono text-blue-100 mb-2">
+      <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">
         {title}
       </h1>
       <span className="text-sm lg:text-lg font-mono text-blue-300 flex justify-between">
@@ -68,10 +68,10 @@ const Project: React.FC<ProjectProps> = ({
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
       <ul className="text-blue-200 lg:text-lg mt-8 list-none list-inside font-inter">
-        {points?.map((point) => (
+        {points?.map((point, i) => (
           <>
             <li>{point}</li>
-            <br />
+            {i < points.length - 1 && <br />}
           </>
         ))}
       </ul>
