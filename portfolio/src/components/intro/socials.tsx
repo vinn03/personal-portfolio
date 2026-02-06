@@ -4,14 +4,14 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 function Socials() {
   return (
-    <div className="font-mono mt-4 mb-24 lg:mb-0 text-blue-300 text-center lg:text-right">
+    <div className="font-mono mt-4 mb-24 lg:mb-0 text-navy-700 dark:text-blue-300 text-center lg:text-right">
       <a href="mailto:vinliu356@gmail.com">
-        <span className="hover:brightness-200 mr-1">
+        <span className="hover:text-navy-900 dark:hover:brightness-200 mr-1 transition-colors">
           <MailIcon fontSize="large" />
         </span>
       </a>
       <a href="https://github.com/vinn03" target="_blank" rel="noreferrer">
-        <span className="hover:brightness-200 mr-1">
+        <span className="hover:text-navy-900 dark:hover:brightness-200 mr-1 transition-colors">
           <GitHub fontSize="large" />
         </span>
       </a>
@@ -20,7 +20,7 @@ function Socials() {
         target="_blank"
         rel="noreferrer"
       >
-        <span className="hover:brightness-200 mr-1">
+        <span className="hover:text-navy-900 dark:hover:brightness-200 mr-1 transition-colors">
           <LinkedIn fontSize="large" />
         </span>
       </a>
@@ -29,7 +29,7 @@ function Socials() {
         target="_blank"
         rel="noreferrer"
       >
-        <span className="hover:brightness-200">
+        <span className="hover:text-navy-900 dark:hover:brightness-200 transition-colors">
           <TextSnippetIcon fontSize="large" />
         </span>
       </a>

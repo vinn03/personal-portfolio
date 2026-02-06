@@ -18,8 +18,8 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ tech }) => {
   return (
     <div
-      className="rounded-lg text-center p-2 text-xs lg:text-base"
-      style={{ backgroundColor: "rgba(0, 13, 50, 0.8)" }}
+      className="rounded-lg text-center p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300"
+      style={{ backgroundColor: "var(--bg-badge)" }}
     >
       {tech}
     </div>
@@ -35,11 +35,11 @@ const Project: React.FC<ProjectProps> = ({
   points,
 }) => {
   return (
-    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <h1 className="text-xl font-bold font-mono text-blue-100 mb-2">
+    <div className="bg-white/80 dark:bg-blue-400/20 border border-blue-200/50 dark:border-transparent p-4 rounded-lg shadow-md relative">
+      <h1 className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100 mb-2">
         {title}
       </h1>
-      <span className="text-sm lg:text-lg font-mono text-blue-300 flex justify-between">
+      <span className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300 flex justify-between">
         <h3 className="inline">{affiliation}</h3>
         <span>
           {webLink ? (
@@ -47,7 +47,7 @@ const Project: React.FC<ProjectProps> = ({
               href={webLink}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-100 mr-2 inline"
+              className="hover:text-navy-900 dark:hover:text-blue-100 mr-2 inline"
             >
               <LanguageIcon />
             </a>
@@ -57,7 +57,7 @@ const Project: React.FC<ProjectProps> = ({
               href={githubLink}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-100 inline"
+              className="hover:text-navy-900 dark:hover:text-blue-100 inline"
             >
               <GitHub />
             </a>
@@ -67,7 +67,7 @@ const Project: React.FC<ProjectProps> = ({
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
-      <ul className="text-blue-200 lg:text-lg mt-8 list-none list-inside font-inter">
+      <ul className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 list-none list-inside font-inter">
         {points?.map((point, i) => (
           <>
             <li>{point}</li>

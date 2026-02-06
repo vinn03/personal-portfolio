@@ -2,18 +2,45 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Theme CSS Variables */
+:root {
+  /* Light mode (default) */
+  --bg-primary: #f0f7ff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-badge: rgba(219, 234, 254, 0.9);
+  --bg-nav-mobile: rgba(240, 247, 255, 0.95);
+  --color-selection-bg: #1d4ed8;
+  --color-selection-text: white;
+  --color-scrollbar-thumb: #3b82f6;
+  --color-scrollbar-track: #e0f2fe;
+}
+
+.dark {
+  /* Dark mode (space theme) */
+  --bg-primary: rgb(17, 27, 62);
+  --bg-card: rgba(0, 12, 36, 0.8);
+  --bg-badge: rgba(0, 13, 50, 0.8);
+  --bg-nav-mobile: rgba(0, 12, 36, 0.8);
+  --color-selection-bg: #00c3ff;
+  --color-selection-text: black;
+  --color-scrollbar-thumb: rgb(96 165 250);
+  --color-scrollbar-track: rgb(17, 27, 62);
+}
+
 html {
-  background-color: rgb(17, 27, 62);
+  background-color: var(--bg-primary);
   overflow-y: scroll;
+  transition: background-color 0.3s ease;
 }
 
 ::selection {
-  color: #00c3ff;
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
 }
 
 @supports (scrollbar-color: auto) {
   html {
-    scrollbar-color: rgb(96 165 250) rgb(17, 27, 62);
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
   }
 }
 
@@ -23,15 +50,15 @@ html {
   }
 
   ::-webkit-scrollbar-button {
-    background: rgb(96 165 250);
+    background: var(--color-scrollbar-thumb);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(17, 27, 62);
+    background: var(--color-scrollbar-track);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(96 165 250);
+    background: var(--color-scrollbar-thumb);
     border-radius: 4px;
   }
 }
@@ -50,6 +77,19 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+/* Light mode: subtle floating particles effect */
+:root:not(.dark) #bg-animation {
+  opacity: 0.25;
+  filter: blur(1px) saturate(0.5);
+}
+
+/* Dark mode: full star visibility */
+.dark #bg-animation {
+  opacity: 1;
+  filter: none;
 }
 
 #stars {

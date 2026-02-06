@@ -17,8 +17,8 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ tech }) => {
   return (
     <div
-      className="rounded-lg text-center p-2 text-xs lg:text-base"
-      style={{ backgroundColor: "rgba(0, 13, 50, 0.8)" }}
+      className="rounded-lg text-center p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300"
+      style={{ backgroundColor: "var(--bg-badge)" }}
     >
       {tech}
     </div>
@@ -34,17 +34,17 @@ const ExpComponent: React.FC<ExpProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-blue-400 bg-opacity-20 p-4 rounded-lg shadow-md relative">
-      <div className="text-xl font-bold font-mono text-blue-100 mb-2">
+    <div className="bg-white/80 dark:bg-blue-400/20 border border-blue-200/50 dark:border-transparent p-4 rounded-lg shadow-md relative">
+      <div className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100 mb-2">
         {title}
       </div>
-      <span className="text-sm lg:text-lg font-mono mb-4 text-blue-300 flex justify-between">
+      <span className="text-sm lg:text-lg font-mono mb-4 text-navy-700 dark:text-blue-300 flex justify-between">
         {companyUrl ? (
           <a
             href={companyUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center hover:text-blue-100"
+            className="inline-flex items-center hover:text-navy-900 dark:hover:text-blue-100"
           >
             {company}
             <OpenInNewIcon style={{ fontSize: "inherit" }} className="ml-2" />
@@ -54,11 +54,11 @@ const ExpComponent: React.FC<ExpProps> = ({
         )}
         <h3 className="inline">{duration}</h3>
       </span>
-      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 text-blue-300 font-mono">
+      <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 font-mono">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
       <p
-        className="text-blue-200 lg:text-lg font-inter mt-8"
+        className="text-navy-800 dark:text-blue-200 lg:text-lg font-inter mt-8"
         style={{ whiteSpace: "pre-line" }}
       >
         {description}

@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -10,6 +10,11 @@ module.exports = {
       },
       colors: {
         'dark-purple': '#800080',
+        'navy': {
+          '900': '#1e3a5f',
+          '800': '#2d4a6f',
+          '700': '#3d5a7f',
+        },
       },
     },
   },
