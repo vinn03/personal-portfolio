@@ -80,10 +80,10 @@ html {
   transition: opacity 0.5s ease, filter 0.5s ease;
 }
 
-/* Light mode: subtle floating particles effect */
+/* Light mode: visible floating particles effect */
 :root:not(.dark) #bg-animation {
-  opacity: 0.25;
-  filter: blur(1px) saturate(0.5);
+  opacity: 0.5;
+  filter: saturate(1.2) brightness(0.7);
 }
 
 /* Dark mode: full star visibility */
