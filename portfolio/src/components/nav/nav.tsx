@@ -7,7 +7,7 @@ function Nav({ handleSectionChange, activeSection }) {
     <div
       className="font-mono lg:mt-12 lg:bg-transparent lg:relative lg:p-0 lg:flex-col lg:items-end
               flex flex-row justify-between items-center p-2 fixed top-0 left-0 right-0 z-20
-              text-navy-700 dark:text-blue-300 bg-[#f0f7ff]/80 dark:bg-[rgb(17,27,62)]/80 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none"
+              text-navy-700 dark:text-blue-300 bg-[#f0f7ff]/80 dark:bg-[rgb(17,27,62)]/80 lg:!bg-transparent backdrop-blur-md lg:backdrop-blur-none"
     >
       <div className="lg:hidden">
         <ThemeToggle />
