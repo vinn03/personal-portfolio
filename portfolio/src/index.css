@@ -3411,3 +3411,42 @@ html {
     transform: translateY(-2000px);
   }
 }
+
+/* Accessibility: Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  #stars,
+  #stars2,
+  #stars3,
+  #stars4 {
+    animation: none !important;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Accessibility: Focus indicators */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Accessibility: Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px 16px;
+  background: var(--bg-primary);
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
