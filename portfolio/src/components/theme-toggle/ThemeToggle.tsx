@@ -8,7 +8,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg transition-colors duration-200
+      className="p-2 lg:p-0 rounded-lg transition-colors duration-200
                  text-navy-700 hover:text-navy-900
                  dark:text-blue-300 dark:hover:text-blue-100"
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
