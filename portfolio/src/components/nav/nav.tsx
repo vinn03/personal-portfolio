@@ -9,9 +9,6 @@ function Nav({ handleSectionChange, activeSection }) {
               flex flex-row justify-between items-center p-2 fixed top-0 left-0 right-0 z-20
               text-navy-700 dark:text-blue-300 bg-[#f0f7ff]/80 dark:bg-[rgb(17,27,62)]/80 lg:!bg-transparent backdrop-blur-md lg:backdrop-blur-none"
     >
-      <div className="lg:hidden">
-        <ThemeToggle />
-      </div>
       <div className="flex flex-row lg:flex-col lg:items-end">
         {sections.map((section) => (
           <a
@@ -27,6 +24,9 @@ function Nav({ handleSectionChange, activeSection }) {
             {section}
           </a>
         ))}
+      </div>
+      <div className="order-first lg:order-last lg:mt-4">
+        <ThemeToggle />
       </div>
     </div>
   );

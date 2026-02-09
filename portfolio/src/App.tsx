@@ -9,7 +9,9 @@ import Projects from "./components/projects/projects";
 import ThemeToggle from "./components/theme-toggle/ThemeToggle";
 
 function App(): JSX.Element {
-  const [activeSection, setActiveSection] = useState<string | undefined>("experience");
+  const [activeSection, setActiveSection] = useState<string | undefined>(
+    "experience",
+  );
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -22,9 +24,6 @@ function App(): JSX.Element {
         <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex-none lg:top-24 lg:z-10">
           <Intro />
           <Socials />
-          <div className="hidden lg:flex lg:justify-end lg:mt-4">
-            <ThemeToggle />
-          </div>
           <Nav
             handleSectionChange={handleSectionChange}
             activeSection={activeSection}
