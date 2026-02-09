@@ -17,9 +17,12 @@ function App(): JSX.Element {
 
   return (
     <div className="m-4">
+      <a href="#main-content" className="skip-link text-navy-900 dark:text-blue-100">
+        Skip to main content
+      </a>
       <Stars />
       <div className="mt-24 lg:mt-16 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
-        <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex lg:flex-col lg:justify-between lg:top-16 lg:z-10 lg:h-[calc(100vh-8rem)]">
+        <header className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex lg:flex-col lg:justify-between lg:top-16 lg:z-10 lg:h-[calc(100vh-8rem)]">
           <div>
             <IntroHeader />
             <Nav
@@ -28,12 +31,12 @@ function App(): JSX.Element {
             />
           </div>
           <IntroFooter />
-        </div>
-        <div className="lg:ml-16 lg:w-2/5">
+        </header>
+        <main id="main-content" className="lg:ml-16 lg:w-2/5">
           {activeSection === "bio" ? <Bio /> : null}
           {activeSection === "experience" ? <Experience /> : null}
           {activeSection === "projects" ? <Projects /> : null}
-        </div>
+        </main>
       </div>
     </div>
   );
