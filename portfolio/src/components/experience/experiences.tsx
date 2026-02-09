@@ -3,13 +3,14 @@ import EXPERIENCES from "../../data/experiences.json";
 
 function Experience() {
   return (
-    <div className="grid grid-cols-1 gap-8 justify-start">
-      {EXPERIENCES.map((exp, index) => (
-        <div
-          key={index}
-          className="bg-opacity-20 rounded-lg shadow-md relative"
-        >
+    <section aria-labelledby="experience-heading">
+      <h1 id="experience-heading" className="sr-only">
+        Work Experience
+      </h1>
+      <div className="grid grid-cols-1 gap-8 justify-start">
+        {EXPERIENCES.map((exp, index) => (
           <ExpComponent
+            key={index}
             title={exp.title}
             company={exp.company}
             companyUrl={exp.companyUrl}
@@ -17,9 +18,9 @@ function Experience() {
             technologies={exp.technologies}
             description={exp.description}
           />
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
