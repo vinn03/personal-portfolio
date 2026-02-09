@@ -38,20 +38,21 @@ const Project: React.FC<ProjectProps> = ({
   points,
 }) => {
   return (
-    <div className="bg-white/80 dark:bg-blue-400/20 border border-blue-200/50 dark:border-transparent p-4 rounded-lg shadow-md relative">
+    <article className="bg-white/80 dark:bg-blue-400/20 border border-blue-200/50 dark:border-transparent p-4 rounded-lg shadow-md relative">
       <div className="flex items-center gap-2 mb-2">
-        <h1 className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100">
+        <h2 className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100">
           {title}
-        </h1>
+        </h2>
         <span className="text-navy-700 dark:text-blue-300">
           {githubLink ? (
             <a
               href={githubLink}
               target="_blank"
               rel="noreferrer"
+              aria-label={`View ${title} source code on GitHub (opens in new tab)`}
               className="hover:text-navy-900 dark:hover:text-blue-100 mr-1"
             >
-              <GitHub />
+              <GitHub aria-hidden="true" />
             </a>
           ) : null}
           {webLink ? (
@@ -59,9 +60,10 @@ const Project: React.FC<ProjectProps> = ({
               href={webLink}
               target="_blank"
               rel="noreferrer"
+              aria-label={`Visit ${title} website (opens in new tab)`}
               className="hover:text-navy-900 dark:hover:text-blue-100"
             >
-              <LanguageIcon />
+              <LanguageIcon aria-hidden="true" />
             </a>
           ) : null}
         </span>
@@ -71,28 +73,26 @@ const Project: React.FC<ProjectProps> = ({
           href={eventLink}
           target="_blank"
           rel="noreferrer"
+          aria-label={`${affiliation} (opens in new tab)`}
           className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300 inline-flex items-center hover:text-navy-900 dark:hover:text-blue-100"
         >
           {affiliation}
-          <OpenInNewIcon style={{ fontSize: "inherit" }} className="ml-2" />
+          <OpenInNewIcon style={{ fontSize: "inherit" }} className="ml-2" aria-hidden="true" />
         </a>
       ) : (
-        <h3 className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300">
+        <p className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300">
           {affiliation}
-        </h3>
+        </p>
       )}
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
-        {technologies?.map((tech) => <Skill tech={tech} />)}
+        {technologies?.map((tech) => <Skill tech={tech} key={tech} />)}
       </div>
-      <ul className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 list-none list-inside font-inter">
+      <ul className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 list-disc list-inside font-inter">
         {points?.map((point, i) => (
-          <>
-            <li>{point}</li>
-            {i < points.length - 1 && <br />}
-          </>
+          <li key={i} className="mb-2">{point}</li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 };
 
