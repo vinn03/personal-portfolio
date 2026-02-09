@@ -36,34 +36,36 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div className="bg-white/80 dark:bg-blue-400/20 border border-blue-200/50 dark:border-transparent p-4 rounded-lg shadow-md relative">
-      <h1 className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100 mb-2">
-        {title}
-      </h1>
-      <span className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300 flex justify-between">
-        <h3 className="inline">{affiliation}</h3>
-        <span>
-          {webLink ? (
-            <a
-              href={webLink}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-navy-900 dark:hover:text-blue-100 mr-2 inline"
-            >
-              <LanguageIcon />
-            </a>
-          ) : null}
+      <div className="flex items-center gap-2 mb-2">
+        <h1 className="text-xl font-bold font-mono text-navy-900 dark:text-blue-100">
+          {title}
+        </h1>
+        <span className="text-navy-700 dark:text-blue-300">
           {githubLink ? (
             <a
               href={githubLink}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-navy-900 dark:hover:text-blue-100 inline"
+              className="hover:text-navy-900 dark:hover:text-blue-100 mr-1"
             >
               <GitHub />
             </a>
           ) : null}
+          {webLink ? (
+            <a
+              href={webLink}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-navy-900 dark:hover:text-blue-100"
+            >
+              <LanguageIcon />
+            </a>
+          ) : null}
         </span>
-      </span>
+      </div>
+      <h3 className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300">
+        {affiliation}
+      </h3>
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>
