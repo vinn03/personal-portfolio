@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Stars from "./components/stars-bg/stars";
 import Nav from "./components/nav/nav";
-import Intro from "./components/intro/intro";
+import { IntroHeader, IntroFooter } from "./components/intro/intro";
 import Bio from "./components/bio/bio";
 import Experience from "./components/experience/experiences";
 import Projects from "./components/projects/projects";
@@ -19,12 +19,15 @@ function App(): JSX.Element {
     <div className="m-4">
       <Stars />
       <div className="mt-24 lg:mt-16 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
-        <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex-none lg:top-16 lg:z-10">
-          <Intro />
-          <Nav
-            handleSectionChange={handleSectionChange}
-            activeSection={activeSection}
-          />
+        <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex lg:flex-col lg:justify-between lg:top-16 lg:z-10 lg:h-[calc(100vh-8rem)]">
+          <div>
+            <IntroHeader />
+            <Nav
+              handleSectionChange={handleSectionChange}
+              activeSection={activeSection}
+            />
+          </div>
+          <IntroFooter />
         </div>
         <div className="lg:ml-16 lg:w-2/5">
           {activeSection === "bio" ? <Bio /> : null}
