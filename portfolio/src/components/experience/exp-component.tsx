@@ -17,7 +17,7 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ tech }) => {
   return (
     <div
-      className="rounded-lg text-center p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300"
+      className="rounded-lg p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300 h-full flex items-center justify-center text-center"
       style={{ backgroundColor: "var(--bg-badge)" }}
     >
       {tech}

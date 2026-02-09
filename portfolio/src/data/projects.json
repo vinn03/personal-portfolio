@@ -1,5 +1,23 @@
 [
   {
+    "title": "Dwelligence",
+    "affiliation": "CalHacks 12.0",
+    "githubLink": "https://github.com/vinn03/dwelligence",
+    "technologies": [
+      "React",
+      "Tailwind",
+      "Google Maps React SDK",
+      "Google Maps API",
+      "Google Gemini API",
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+    "points": [
+      "A real estate search platform that overlays commute intelligence onto property listings, enabling users to evaluate housing by travel time to their workplace with an interactive map interface and AI-powered neighborhood insights."
+    ]
+  },
+  {
     "title": "MetroWage",
     "affiliation": "ECCE - GIS App Challenge 2025",
     "githubLink": "https://github.com/benschoening/AppChallenge2025",
