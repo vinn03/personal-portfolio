@@ -16,7 +16,7 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="m-4">
+    <div className="m-4 lg:mr-24">
       <a
         href="#main-content"
         className="skip-link text-navy-900 dark:text-blue-100"
@@ -25,7 +25,7 @@ function App(): JSX.Element {
       </a>
       <Stars />
       <div className="mt-24 lg:mt-16 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
-        <header className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex lg:flex-col lg:justify-between lg:top-16 lg:z-10 lg:h-[calc(100vh-8rem)]">
+        <header className="lg:-ml-16 lg:w-2/5 lg:sticky lg:flex lg:flex-col lg:justify-between lg:top-16 lg:z-10 lg:h-[calc(100vh-8rem)]">
           <div>
             <IntroHeader />
             <Nav
