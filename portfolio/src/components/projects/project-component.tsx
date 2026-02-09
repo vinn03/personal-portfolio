@@ -1,10 +1,12 @@
 import React from "react";
 import { GitHub } from "@mui/icons-material";
 import LanguageIcon from "@mui/icons-material/Language";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 interface ProjectProps {
   title?: string;
   affiliation?: string;
+  eventLink?: string;
   webLink?: string;
   githubLink?: string;
   technologies?: string[];
@@ -29,6 +31,7 @@ const Skill: React.FC<SkillProps> = ({ tech }) => {
 const Project: React.FC<ProjectProps> = ({
   title,
   affiliation,
+  eventLink,
   webLink,
   githubLink,
   technologies,
@@ -63,9 +66,21 @@ const Project: React.FC<ProjectProps> = ({
           ) : null}
         </span>
       </div>
-      <h3 className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300">
-        {affiliation}
-      </h3>
+      {eventLink ? (
+        <a
+          href={eventLink}
+          target="_blank"
+          rel="noreferrer"
+          className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300 inline-flex items-center hover:text-navy-900 dark:hover:text-blue-100"
+        >
+          {affiliation}
+          <OpenInNewIcon style={{ fontSize: "inherit" }} className="ml-2" />
+        </a>
+      ) : (
+        <h3 className="text-sm lg:text-lg font-mono text-navy-700 dark:text-blue-300">
+          {affiliation}
+        </h3>
+      )}
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {technologies?.map((tech) => <Skill tech={tech} />)}
       </div>

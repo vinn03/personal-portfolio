@@ -5,7 +5,7 @@
     "companyUrl": "https://www.geocomply.com/anti-fraud-and-geolocation-solutions/geocomply-core/",
     "location": "Vancouver, BC",
     "duration": "SEP 2025 - PRESENT",
-    "description": "Designed and implemented a modular machine learning model pipeline to detect fraudulent activity within geographic areas, delivering its results to customers via gRPC.",
+    "description": "Designed and implemented a modular model pipeline to detect fraudulent activity within geographic areas, delivering its results to customers via gRPC.",
     "technologies": ["Python", "PySpark", "SQL", "gRPC"]
   },
   {

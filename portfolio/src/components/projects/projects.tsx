@@ -11,6 +11,7 @@ const Projects: React.FC = () => {
             affiliation={project.affiliation}
             webLink={project.webLink}
             githubLink={project.githubLink}
+            eventLink={project.eventLink}
             technologies={project.technologies}
             points={project.points}
           />
