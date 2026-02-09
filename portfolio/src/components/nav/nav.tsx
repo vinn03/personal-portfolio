@@ -25,7 +25,7 @@ function Nav({ handleSectionChange, activeSection }) {
           </a>
         ))}
       </div>
-      <div className="order-first lg:order-last lg:mt-4">
+      <div className="order-first lg:order-last lg:mt-8">
         <ThemeToggle />
       </div>
     </div>

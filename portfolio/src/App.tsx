@@ -3,10 +3,8 @@ import Stars from "./components/stars-bg/stars";
 import Nav from "./components/nav/nav";
 import Intro from "./components/intro/intro";
 import Bio from "./components/bio/bio";
-import Socials from "./components/intro/socials";
 import Experience from "./components/experience/experiences";
 import Projects from "./components/projects/projects";
-import ThemeToggle from "./components/theme-toggle/ThemeToggle";
 
 function App(): JSX.Element {
   const [activeSection, setActiveSection] = useState<string | undefined>(
@@ -20,10 +18,9 @@ function App(): JSX.Element {
   return (
     <div className="m-4">
       <Stars />
-      <div className="mt-24 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
-        <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex-none lg:top-24 lg:z-10">
+      <div className="mt-24 lg:mt-16 lg:flex lg:flex-row lg:justify-center lg:items-start relative">
+        <div className="lg:-ml-16 lg:w-1/4 lg:sticky lg:flex-none lg:top-16 lg:z-10">
           <Intro />
-          <Socials />
           <Nav
             handleSectionChange={handleSectionChange}
             activeSection={activeSection}
