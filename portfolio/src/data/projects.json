@@ -2,6 +2,7 @@
   {
     "title": "Dwelligence",
     "affiliation": "CalHacks 12.0",
+    "webLink": "https://devpost.com/software/dwelligence",
     "githubLink": "https://github.com/vinn03/dwelligence",
     "technologies": [
       "React",
@@ -36,6 +37,7 @@
   {
     "title": "MoodMirror",
     "affiliation": "nwHacks 2025",
+    "webLink": "https://devpost.com/software/moodmirror",
     "githubLink": "https://github.com/vinn03/moodmirror",
     "technologies": [
       "Swift",
