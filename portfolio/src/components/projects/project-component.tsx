@@ -2,6 +2,7 @@ import React from "react";
 import { GitHub } from "@mui/icons-material";
 import LanguageIcon from "@mui/icons-material/Language";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import SkillBadge from "../ui/skill-badge";
 
 interface ProjectProps {
   title?: string;
@@ -12,21 +13,6 @@ interface ProjectProps {
   technologies?: string[];
   points?: string[];
 }
-
-interface SkillProps {
-  tech?: string;
-}
-
-const Skill: React.FC<SkillProps> = ({ tech }) => {
-  return (
-    <div
-      className="rounded-lg p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300 h-full flex items-center justify-center text-center"
-      style={{ backgroundColor: "var(--bg-badge)" }}
-    >
-      {tech}
-    </div>
-  );
-};
 
 const Project: React.FC<ProjectProps> = ({
   title,
@@ -85,7 +71,7 @@ const Project: React.FC<ProjectProps> = ({
         </p>
       )}
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
-        {technologies?.map((tech) => <Skill tech={tech} key={tech} />)}
+        {technologies?.map((tech) => <SkillBadge tech={tech} key={tech} />)}
       </div>
       <ul className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 list-disc list-inside font-inter">
         {points?.map((point, i) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import SkillBadge from "../ui/skill-badge";
 
 interface ExpProps {
   title: string;
@@ -9,21 +10,6 @@ interface ExpProps {
   technologies?: string[] | null;
   description: any;
 }
-
-interface SkillProps {
-  tech?: string;
-}
-
-const Skill: React.FC<SkillProps> = ({ tech }) => {
-  return (
-    <div
-      className="rounded-lg p-2 text-xs lg:text-base text-navy-700 dark:text-blue-300 h-full flex items-center justify-center text-center"
-      style={{ backgroundColor: "var(--bg-badge)" }}
-    >
-      {tech}
-    </div>
-  );
-};
 
 const ExpComponent: React.FC<ExpProps> = ({
   title,
@@ -56,7 +42,7 @@ const ExpComponent: React.FC<ExpProps> = ({
         <span>{duration}</span>
       </div>
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 font-mono">
-        {technologies?.map((tech) => <Skill tech={tech} key={tech} />)}
+        {technologies?.map((tech) => <SkillBadge tech={tech} key={tech} />)}
       </div>
       <p
         className="text-navy-800 dark:text-blue-200 lg:text-lg font-inter mt-8"

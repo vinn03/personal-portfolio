@@ -17,7 +17,10 @@ function App(): JSX.Element {
 
   return (
     <div className="m-4">
-      <a href="#main-content" className="skip-link text-navy-900 dark:text-blue-100">
+      <a
+        href="#main-content"
+        className="skip-link text-navy-900 dark:text-blue-100"
+      >
         Skip to main content
       </a>
       <Stars />
