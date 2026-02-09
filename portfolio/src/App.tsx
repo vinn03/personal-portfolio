@@ -36,9 +36,9 @@ function App(): JSX.Element {
           <IntroFooter />
         </header>
         <main id="main-content" className="lg:ml-16 lg:w-2/5">
-          {activeSection === "bio" ? <Bio /> : null}
           {activeSection === "experience" ? <Experience /> : null}
           {activeSection === "projects" ? <Projects /> : null}
+          {activeSection === "bio" ? <Bio /> : null}
         </main>
       </div>
     </div>
