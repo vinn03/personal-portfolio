@@ -1,8 +1,8 @@
 import Socials from "./socials";
 
-function Intro() {
+function IntroHeader() {
   return (
-    <span className="text-center lg:text-right">
+    <span className="text-center lg:text-right block">
       <h1 className="text-4xl lg:text-6xl font-mono font-bold text-navy-900 dark:text-blue-100">
         Vincent Liu
       </h1>
@@ -13,13 +13,29 @@ function Intro() {
         <div>2x SWE Intern @ Apple</div>
       </div>
 
-      <Socials />
-
-      <div className="text-lg font-mono mt-8 text-navy-700 dark:text-blue-200">
-        <div>New Grad Availability: Summer 2026</div>
+      <div className="text-lg font-mono mt-4 text-navy-700 dark:text-blue-200">
+        New Grad Availability: Summer 2026
       </div>
     </span>
   );
 }
 
+function IntroFooter() {
+  return (
+    <span className="text-center lg:text-right block">
+      <Socials />
+    </span>
+  );
+}
+
+function Intro() {
+  return (
+    <>
+      <IntroHeader />
+      <IntroFooter />
+    </>
+  );
+}
+
 export default Intro;
+export { IntroHeader, IntroFooter };

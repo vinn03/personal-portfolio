@@ -13,7 +13,7 @@ function Nav({ handleSectionChange, activeSection }) {
         {sections.map((section) => (
           <a
             key={section}
-            className={`lg:hover:underline text-lg lg:text-right lg:text-xl mr-2 ml-2 lg:ml-0 lg:mr-0 cursor-pointer
+            className={`lg:flex lg:items-center lg:gap-2 text-lg lg:text-right lg:text-xl mr-2 ml-2 lg:ml-0 lg:mr-0 cursor-pointer
                     ${
                       activeSection === section
                         ? "text-navy-900 dark:text-white font-semibold"
@@ -22,10 +22,19 @@ function Nav({ handleSectionChange, activeSection }) {
             onClick={() => handleSectionChange(section)}
           >
             {section}
+            <span
+              className={`hidden lg:inline-block transition-all duration-300 ${
+                activeSection === section ? "w-12" : "w-6"
+              }`}
+              style={{
+                height: "1px",
+                backgroundColor: "currentColor",
+              }}
+            />
           </a>
         ))}
       </div>
-      <div className="order-first lg:order-last lg:mt-8">
+      <div className="order-first lg:order-last lg:mt-4">
         <ThemeToggle />
       </div>
     </div>
