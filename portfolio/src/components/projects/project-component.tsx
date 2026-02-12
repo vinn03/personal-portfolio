@@ -73,11 +73,11 @@ const Project: React.FC<ProjectProps> = ({
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {technologies?.map((tech) => <SkillBadge tech={tech} key={tech} />)}
       </div>
-      <ul className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 list-disc list-inside font-inter">
+      <div className="text-navy-800 dark:text-blue-200 lg:text-lg mt-8 font-inter">
         {points?.map((point, i) => (
-          <li key={i} className="mb-2">{point}</li>
+          <div key={i} className="mb-2">{point}</div>
         ))}
-      </ul>
+      </div>
     </article>
   );
 };
